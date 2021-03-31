@@ -24,8 +24,3 @@ li {
         li a:hover {
             background-color: #111;
         }
-
-div.holo img {
-    width: 100%;
-    height: auto;
-}
