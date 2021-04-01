@@ -16,10 +16,12 @@ ul {
 
 li {
     float: left;
+    cursor: pointer;
 }
 
 li.right {
     float: right;
+    cursor: pointer;
 }
 
     li a {
