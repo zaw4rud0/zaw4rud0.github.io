@@ -14,14 +14,21 @@
     <div>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/holo.html">Holo</a></li>
+            <li><a href="holo.html">Holo</a></li>
             <li><a>Otaku-senpai</a></li>
+            <li class="right" onclick="toggleDarkMode()"><a>Dark Mode</a></li>
         </ul>
     </div>
-
     <div class="holo">
-        <img src="../assets/images/holo_1.jpg" width="1920" height="1371">
+        <img src="../assets/images/holo_1.jpg">
     </div>
+
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 
 </body>
 </html>

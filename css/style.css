@@ -2,6 +2,10 @@ body {
     background-color: #fff7f5;
 }
 
+.dark-mode {
+    background-color: #212121;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -14,6 +18,10 @@ li {
     float: left;
 }
 
+li.right {
+    float: right;
+}
+
     li a {
         display: block;
         color: white;
@@ -24,3 +32,4 @@ li {
         li a:hover {
             background-color: #111;
         }
+            
