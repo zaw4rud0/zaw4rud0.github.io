@@ -1,9 +1,12 @@
 body {
-    background-color: #fff7f5;
+    background-color: #212121;
+    margin: 0px;
 }
 
-.dark-mode {
-    background-color: #212121;
+.holo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 ul {
