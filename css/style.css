@@ -1,40 +1,51 @@
 body {
-    background-color: #212121;
+    background-color: #212121;    
     margin: 0px;
 }
 
-.holo img {
-    width: 100%;
-    height: auto;
-    display: block;
+a:link {
+    color: #7692ad;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-ul {
+a:visited {
+    color: #7692ad;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #171717;
 }
 
-li {
+#navbar li {
     float: left;
     cursor: pointer;
 }
 
-li.right {
-    float: right;
-    cursor: pointer;
-}
-
-    li a {
+    #navbar li a {
         display: block;
         color: white;
         padding: 14px 16px;
         text-decoration: none;
     }
 
-        li a:hover {
+        #navbar li a:hover {
             background-color: #111;
         }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #171717;
+    color: white;
+    text-align: center;
+}
             
