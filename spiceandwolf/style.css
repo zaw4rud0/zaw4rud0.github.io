@@ -89,12 +89,6 @@ main {
     width: 900px;
 }
 
-    main h2 {
-        padding: 0 0 1px 0;
-        border-bottom: 1px solid #b9bcbc;
-        margin: 18px 0 4px 0;
-    }
-
 .title h1 {
     margin: 18px 0 8px 0;
 }
@@ -103,6 +97,13 @@ main {
     background-color: rgba(242, 242, 242, 0.9);
     padding: 1px 20px 0 20px;
 }
+
+    .content h2 {
+        padding: 0 0 1px 0;
+        border-bottom: 1px solid #b9bcbc;
+        overflow: hidden;
+        margin: 18px 0 4px 0;
+    }
 
 .content h3 {
     margin: 9px 0 3px 0;
