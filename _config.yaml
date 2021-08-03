@@ -1,1 +1,10 @@
+# basic options
+title: Blog
+author: Adrian Martinez
+email: adrian.e.martinez.ayuso@gmail.com
+description: My very first blog :happe:
+github_username: xHarlock
 
+# Build settings
+markdown: kramdown
+theme: minima
