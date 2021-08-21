@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Blog</title>
+        <link>https://xharlock.github.io/posts/</link>
+        <description>Recent content in Posts on Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate>
+        <atom:link href="https://xharlock.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hello, World!</title>
+            <link>https://xharlock.github.io/posts/hello-world/</link>
+            <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
+            
+            <guid>https://xharlock.github.io/posts/hello-world/</guid>
+            <description>Hello, World! This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</description>
+            <content type="html"><![CDATA[<h1 id="hello-world">Hello, World!</h1>
+<p>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
