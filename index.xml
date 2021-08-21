@@ -5,6 +5,25 @@
     <link>https://xharlock.github.io/</link>
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://xharlock.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate><atom:link href="https://xharlock.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://xharlock.github.io/about/</link>
+      <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
+      
+      <guid>https://xharlock.github.io/about/</guid>
+      <description>Hello there</description>
+    </item>
+    
+    <item>
+      <title>Hello, World!</title>
+      <link>https://xharlock.github.io/posts/hello-world/</link>
+      <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
+      
+      <guid>https://xharlock.github.io/posts/hello-world/</guid>
+      <description>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</description>
+    </item>
+    
   </channel>
 </rss>

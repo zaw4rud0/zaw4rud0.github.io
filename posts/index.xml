@@ -14,9 +14,8 @@
             <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
             
             <guid>https://xharlock.github.io/posts/hello-world/</guid>
-            <description>Hello, World! This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</description>
-            <content type="html"><![CDATA[<h1 id="hello-world">Hello, World!</h1>
-<p>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</p>
+            <description>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</description>
+            <content type="html"><![CDATA[<p>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</p>
 ]]></content>
         </item>
         
