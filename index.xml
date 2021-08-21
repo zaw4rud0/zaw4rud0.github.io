@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog</title>
+    <title>Adrian&#39;s Blog</title>
     <link>https://xharlock.github.io/</link>
-    <description>Recent content on Blog</description>
+    <description>Recent content on Adrian&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate><atom:link href="https://xharlock.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>https://xharlock.github.io/about/</link>
+      <title>About Me</title>
+      <link>https://xharlock.github.io/about-me/</link>
       <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
       
-      <guid>https://xharlock.github.io/about/</guid>
-      <description>Hello there</description>
+      <guid>https://xharlock.github.io/about-me/</guid>
+      <description>Hello there, this is the blog of Adrian Martinez, a CS student at ETH Zurich. Here you will find posts about various topics. I hope you enjoy your stay :D</description>
     </item>
     
     <item>
@@ -22,7 +22,8 @@
       <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
       
       <guid>https://xharlock.github.io/posts/hello-world/</guid>
-      <description>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</description>
+      <description>This is my very first post on this blog. Obligatory code:
+public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
     </item>
     
   </channel>

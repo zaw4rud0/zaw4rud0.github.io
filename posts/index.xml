@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Blog</title>
+        <title>Posts on Adrian&#39;s Blog</title>
         <link>https://xharlock.github.io/posts/</link>
-        <description>Recent content in Posts on Blog</description>
+        <description>Recent content in Posts on Adrian&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate>
@@ -14,8 +14,14 @@
             <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
             
             <guid>https://xharlock.github.io/posts/hello-world/</guid>
-            <description>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</description>
-            <content type="html"><![CDATA[<p>This is my very first post on this blog. I hope you enjoy your stay, and I will see you again very soon :D</p>
+            <description>This is my very first post on this blog. Obligatory code:
+public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
+            <content type="html"><![CDATA[<p>This is my very first post on this blog. Obligatory code:</p>
+<pre><code class="language-java">public static void main(String[] args) {
+   System.out.println(&quot;Hello, World!&quot;);
+}
+</code></pre>
+<p>I hope you enjoy your stay on this blog, and I will see you again very soon.</p>
 ]]></content>
         </item>
         
