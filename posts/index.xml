@@ -18,7 +18,7 @@
 public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
             <content type="html"><![CDATA[<p>This is my very first post on this blog. Obligatory code:</p>
 <pre><code class="language-java">public static void main(String[] args) {
-   System.out.println(&quot;Hello, World!&quot;);
+	System.out.println(&quot;Hello, World!&quot;);
 }
 </code></pre>
 <p>I hope you enjoy your stay on this blog, and I will see you again very soon.</p>
