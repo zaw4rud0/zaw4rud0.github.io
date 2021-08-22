@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate><atom:link href="https://xharlock.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Summaries</title>
+      <link>https://xharlock.github.io/summaries/</link>
+      <pubDate>Sun, 22 Aug 2021 08:30:22 +0200</pubDate>
+      
+      <guid>https://xharlock.github.io/summaries/</guid>
+      <description>Hey there, here you will find my summaries and cheatsheets.
+If you find any mistakes or if any of the links don&amp;rsquo;t work anymore, please let me know via a mail.</description>
+    </item>
+    
+    <item>
       <title>About Me</title>
       <link>https://xharlock.github.io/about-me/</link>
       <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
