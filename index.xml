@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adrian&#39;s Blog</title>
-    <link>https://xharlock.github.io/</link>
+    <link>https://blog.martinez-ayuso.ch/</link>
     <description>Recent content on Adrian&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate><atom:link href="https://xharlock.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Summaries</title>
-      <link>https://xharlock.github.io/summaries/</link>
+      <link>https://blog.martinez-ayuso.ch/summaries/</link>
       <pubDate>Sun, 22 Aug 2021 08:30:22 +0200</pubDate>
       
-      <guid>https://xharlock.github.io/summaries/</guid>
+      <guid>https://blog.martinez-ayuso.ch/summaries/</guid>
       <description>Hey there, here you will find my summaries and cheatsheets.
 If you find any mistakes or if any of the links don&amp;rsquo;t work anymore, please let me know via a mail.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://xharlock.github.io/about-me/</link>
+      <link>https://blog.martinez-ayuso.ch/about-me/</link>
       <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
       
-      <guid>https://xharlock.github.io/about-me/</guid>
+      <guid>https://blog.martinez-ayuso.ch/about-me/</guid>
       <description>Hello there, this is the blog of Adrian Martinez, a CS student at ETH Zurich. Here you will find posts about various topics. I hope you enjoy your stay :D</description>
     </item>
     
     <item>
       <title>Hello, World!</title>
-      <link>https://xharlock.github.io/posts/hello-world/</link>
+      <link>https://blog.martinez-ayuso.ch/posts/hello-world/</link>
       <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
       
-      <guid>https://xharlock.github.io/posts/hello-world/</guid>
+      <guid>https://blog.martinez-ayuso.ch/posts/hello-world/</guid>
       <description>This is my very first post on this blog. Obligatory code:
 public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Adrian&#39;s Blog</title>
-    <link>https://xharlock.github.io/tags/</link>
+    <link>https://blog.martinez-ayuso.ch/tags/</link>
     <description>Recent content in Tags on Adrian&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate><atom:link href="https://xharlock.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java</title>
-      <link>https://xharlock.github.io/tags/java/</link>
+      <link>https://blog.martinez-ayuso.ch/tags/java/</link>
       <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
       
-      <guid>https://xharlock.github.io/tags/java/</guid>
+      <guid>https://blog.martinez-ayuso.ch/tags/java/</guid>
       <description></description>
     </item>
     

@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Adrian&#39;s Blog</title>
-        <link>https://xharlock.github.io/posts/</link>
+        <link>https://blog.martinez-ayuso.ch/posts/</link>
         <description>Recent content in Posts on Adrian&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sat, 21 Aug 2021 17:24:19 +0200</lastBuildDate>
-        <atom:link href="https://xharlock.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.martinez-ayuso.ch/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Hello, World!</title>
-            <link>https://xharlock.github.io/posts/hello-world/</link>
+            <link>https://blog.martinez-ayuso.ch/posts/hello-world/</link>
             <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
             
-            <guid>https://xharlock.github.io/posts/hello-world/</guid>
+            <guid>https://blog.martinez-ayuso.ch/posts/hello-world/</guid>
             <description>This is my very first post on this blog. Obligatory code:
 public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
             <content type="html"><![CDATA[<p>This is my very first post on this blog. Obligatory code:</p>
