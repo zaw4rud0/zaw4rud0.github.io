@@ -10,18 +10,17 @@
         
         <item>
             <title>Hello, World!</title>
-            <link>https://blog.martinez-ayuso.ch/posts/hello-world/</link>
+            <link>https://blog.martinez-ayuso.ch/posts/2021/08/hello-world/</link>
             <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
             
-            <guid>https://blog.martinez-ayuso.ch/posts/hello-world/</guid>
+            <guid>https://blog.martinez-ayuso.ch/posts/2021/08/hello-world/</guid>
             <description>This is my very first post on this blog. Obligatory code:
-public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
+public static void main(String[] args) { System.out.println(&amp;#34;Hello, World!&amp;#34;); } I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
             <content type="html"><![CDATA[<p>This is my very first post on this blog. Obligatory code:</p>
-<pre><code class="language-java">public static void main(String[] args) {
-	System.out.println(&quot;Hello, World!&quot;);
-}
-</code></pre>
-<p>I hope you enjoy your stay on this blog, and I will see you again very soon.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello, World!&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>I hope you enjoy your stay on this blog, and I will see you again very soon.</p>
 ]]></content>
         </item>
         

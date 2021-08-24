@@ -18,22 +18,22 @@ If you find any mistakes or if any of the links don&amp;rsquo;t work anymore, pl
     </item>
     
     <item>
-      <title>About Me</title>
-      <link>https://blog.martinez-ayuso.ch/about-me/</link>
+      <title>About</title>
+      <link>https://blog.martinez-ayuso.ch/about/</link>
       <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
       
-      <guid>https://blog.martinez-ayuso.ch/about-me/</guid>
+      <guid>https://blog.martinez-ayuso.ch/about/</guid>
       <description>Hello there, this is the blog of Adrian Martinez, a CS student at ETH Zurich. Here you will find posts about various topics. I hope you enjoy your stay :D</description>
     </item>
     
     <item>
       <title>Hello, World!</title>
-      <link>https://blog.martinez-ayuso.ch/posts/hello-world/</link>
+      <link>https://blog.martinez-ayuso.ch/posts/2021/08/hello-world/</link>
       <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
       
-      <guid>https://blog.martinez-ayuso.ch/posts/hello-world/</guid>
+      <guid>https://blog.martinez-ayuso.ch/posts/2021/08/hello-world/</guid>
       <description>This is my very first post on this blog. Obligatory code:
-public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
+public static void main(String[] args) { System.out.println(&amp;#34;Hello, World!&amp;#34;); } I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
     </item>
     
   </channel>

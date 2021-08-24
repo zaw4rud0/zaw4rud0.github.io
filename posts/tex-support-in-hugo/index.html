@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Adrian Martinez ">
+<meta name="description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step.
+First of all, we create a file called katex.html inside the partials folder which you can find in the layouts folder." />
+<meta name="keywords" content=", TeX, Hugo" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/" />
+
+
+    <title>
+        
+            TeX Support in Hugo :: Adrian&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://blog.martinez-ayuso.ch/main.a725064b65a2ebbc3e167794a76f96d3756ca3a16e543dd33b09da445600a329.css">
+
+
+
+
+
+
+<meta itemprop="name" content="TeX Support in Hugo">
+<meta itemprop="description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step.
+First of all, we create a file called katex.html inside the partials folder which you can find in the layouts folder."><meta itemprop="datePublished" content="2021-08-23T20:15:52+02:00" />
+<meta itemprop="dateModified" content="2021-08-23T20:15:52+02:00" />
+<meta itemprop="wordCount" content="382">
+<meta itemprop="keywords" content="TeX,Hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TeX Support in Hugo"/>
+<meta name="twitter:description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step.
+First of all, we create a file called katex.html inside the partials folder which you can find in the layouts folder."/>
+
+
+
+
+    <meta property="og:title" content="TeX Support in Hugo" />
+<meta property="og:description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step.
+First of all, we create a file called katex.html inside the partials folder which you can find in the layouts folder." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-23T20:15:52+02:00" />
+<meta property="article:modified_time" content="2021-08-23T20:15:52+02:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-08-23 20:15:52 &#43;0200 CEST" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://blog.martinez-ayuso.ch/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">Home</span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#0093b7;
+                   animation-duration:1,75s;">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://blog.martinez-ayuso.ch/posts">Posts</a></li><li><a href="https://blog.martinez-ayuso.ch/summaries">Summaries</a></li><li><a href="https://blog.martinez-ayuso.ch/about-me">About Me</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+        <h1 class="post-title">
+            <a href="https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/">TeX Support in Hugo</a>
+        </h1>
+
+        
+
+        
+
+        
+        
+            
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+        
+
+        
+
+        <div class="post-content">
+            <p>In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step.</p>
+<p>First of all, we create a file called <code>katex.html</code> inside the <code>partials</code> folder which you can find in the <code>layouts</code> folder. Inside it, we paste the following code:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css&quot; integrity=&quot;sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js&quot; integrity=&quot;sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js&quot; integrity=&quot;sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl&quot; crossorigin=&quot;anonymous&quot;
+        onload=&quot;renderMathInElement(document.body);&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>This is the auto-render extension of KaTeX, which, as the name suggests, automatically renders all of the TeX math inside a text. For more information, refer to this <a href="https://katex.org/docs/autorender.html">page</a>.</p>
+<p>Afterwards, we switch to the <code>posts</code> folder which is located inside the <code>layouts</code> folder as well. There we add a copy of the <code>single.html</code> file from the <code>themes/YOUR-THEME/layouts/posts</code> folder and insert the following code inside the <code>&lt;article&gt;</code> element:</p>
+<pre><code>{{ if .Params.katex}}
+    {{ partial &quot;katex.html&quot; . }}
+{{ end }}
+</code></pre>
+<p>In a nutshell, this piece of code uses the KaTeX auto-render I mentioned above to render all of the TeX Code it can find inside the blog post, assuming that the post contains the line <code>katex: true</code> in its front matter.</p>
+<p>We are pretty much done and we can see that this TeX code</p>
+<pre><code>$$\int \frac{1}{x-2}$$
+</code></pre>
+<p>outputs the following $$\int \frac{1}{x-2}$$</p>
+<h3 id="bonus">Bonus</h3>
+<p>In order to automatically add the <code>katex</code> line inside the front matter of every blog post, we can override the current archetype of a blog post. To do so, we simply go inside the <code>archetypes</code> folder and add a file called <code>posts.md</code>. Inside that file, we add the following code:</p>
+<pre><code>---
+title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
+date: {{ .Date }}
+draft: true
+toc: false
+katex: false
+images:
+tags:
+  - untagged
+---
+</code></pre>
+<p>If that file already exists in that folder, simply add <code>katex: false</code> somewhere in the front matter.</p>
+<p>The <code>posts.md</code> file basically represents the front matter of every blog post we create from now on. If you are using TeX code inside your post and want to render it, simply set <code>katex: true</code>.</p>
+<p>I hope you could follow this small tutorial and that you achieved the desired result.</p>
+<p>Have a great day! 😄</p>
+
+        </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/tex/">TeX</a></span>
+        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/hugo/">Hugo</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        382 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-08-23 20:15
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        <div class="pagination__title">
+            <span class="pagination__title-h"></span>
+            <hr />
+        </div>
+
+        <div class="pagination__buttons">
+
+            
+            
+
+            
+            
+            <span class="button previous">
+                <a href="https://blog.martinez-ayuso.ch/posts/hello-world/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">Hello, World!</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://blog.martinez-ayuso.ch/">Adrian Martinez</a></span>
+            
+            <span><a href="https://blog.martinez-ayuso.ch/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="https://gohugo.io">Hugo</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://blog.martinez-ayuso.ch/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

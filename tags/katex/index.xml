@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KaTeX on Adrian&#39;s Blog</title>
+    <link>https://blog.martinez-ayuso.ch/tags/katex/</link>
+    <description>Recent content in KaTeX on Adrian&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Aug 2021 20:15:52 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/katex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TeX Support in Hugo</title>
+      <link>https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/</link>
+      <pubDate>Mon, 23 Aug 2021 20:15:52 +0200</pubDate>
+      
+      <guid>https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/</guid>
+      <description>In this article I want to show how you can add TeX code in your Hugo website.
+Chances are that you are already familiar with Hugo and how it works. If you are not, that&amp;rsquo;s no problem.
+This is an example: $$\int \frac{1}{x-2}$$</description>
+    </item>
+    
+  </channel>
+</rss>
