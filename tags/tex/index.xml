@@ -6,15 +6,14 @@
     <description>Recent content in TeX on Adrian&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Aug 2021 20:15:52 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/tex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 16:04:35 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/tex/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TeX Support in Hugo</title>
-      <link>https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/</link>
-      <pubDate>Mon, 23 Aug 2021 20:15:52 +0200</pubDate>
+      <title>How to Add TeX Support in Hugo</title>
+      <link>https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
+      <pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate>
       
-      <guid>https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/</guid>
-      <description>In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step.
-First of all, we create a file called katex.html inside the partials folder which you can find in the layouts folder.</description>
+      <guid>https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
+      <description>In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.</description>
     </item>
     
   </channel>
