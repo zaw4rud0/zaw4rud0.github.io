@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Adrian Martinez ">
-<meta name="description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
+<meta name="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
 <meta name="keywords" content=", TeX, Hugo" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -42,21 +42,21 @@
 
 
 <meta itemprop="name" content="How to Add TeX Support in Hugo">
-<meta itemprop="description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."><meta itemprop="datePublished" content="2021-08-27T16:04:35+02:00" />
+<meta itemprop="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."><meta itemprop="datePublished" content="2021-08-27T16:04:35+02:00" />
 <meta itemprop="dateModified" content="2021-08-27T16:04:35+02:00" />
-<meta itemprop="wordCount" content="415"><meta itemprop="image" content="https://blog.martinez-ayuso.ch/"/>
+<meta itemprop="wordCount" content="420"><meta itemprop="image" content="https://blog.martinez-ayuso.ch/"/>
 <meta itemprop="keywords" content="TeX,Hugo," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.martinez-ayuso.ch/"/>
 
 <meta name="twitter:title" content="How to Add TeX Support in Hugo"/>
-<meta name="twitter:description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."/>
+<meta name="twitter:description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."/>
 
 
 
 
     <meta property="og:title" content="How to Add TeX Support in Hugo" />
-<meta property="og:description" content="In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
+<meta property="og:description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/" /><meta property="og:image" content="https://blog.martinez-ayuso.ch/"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-27T16:04:35+02:00" />
@@ -164,7 +164,7 @@
         
 
         <div class="post-content">
-            <p>In this post I want to show how you can add and properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you.</p>
+            <p>In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you.</p>
 <p>First of all, we create a file called <code>katex.html</code> inside the <code>partials</code> folder which you can find in the <code>layouts</code> folder. Inside it, we paste the following code:</p>
 <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css&quot; integrity=&quot;sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn&quot; crossorigin=&quot;anonymous&quot;&gt;
 &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js&quot; integrity=&quot;sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -225,7 +225,7 @@ tags:
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        415 Words
+        420 Words
       </p>
 
       <p>
