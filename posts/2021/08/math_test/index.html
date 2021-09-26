@@ -5,23 +5,29 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Adrian Martinez ">
-<meta name="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
-<meta name="keywords" content=", TeX, Hugo" />
+<meta name="description" content="In this post we have an overview over simple, yet useful formulas
+Completing the square $$x^2 &#43; bx &#43; c = (x &#43; \frac{b}{2})^2 - \frac{b^2}{4} &#43; c$$
+Quadratic formula Die Wurzeln von $$ax^2 &#43; bx &#43; c$$ sind $$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$" />
+<meta name="keywords" content=", untagged" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/" />
+<link rel="canonical" href="https://blog.martinez-ayuso.ch/posts/2021/08/math_test/" />
 
 
     <title>
         
-            How to Add TeX Support in Hugo :: Adrian&#39;s Blog 
+            Math_test :: Adrian&#39;s Blog 
         
     </title>
 
 
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
 
-<link rel="stylesheet" href="https://blog.martinez-ayuso.ch/main.ec6d710ef21a7ac8d17d76057a9c26338212d2efe9c1888bc6839994b2861213.css">
+
+
+<link rel="stylesheet" href="https://blog.martinez-ayuso.ch/main.a725064b65a2ebbc3e167794a76f96d3756ca3a16e543dd33b09da445600a329.css">
 
 
 
@@ -37,26 +43,32 @@
 
 
 
-<meta itemprop="name" content="How to Add TeX Support in Hugo">
-<meta itemprop="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."><meta itemprop="datePublished" content="2021-08-27T16:04:35+02:00" />
-<meta itemprop="dateModified" content="2021-08-27T16:04:35+02:00" />
-<meta itemprop="wordCount" content="420"><meta itemprop="image" content="https://blog.martinez-ayuso.ch/"/>
-<meta itemprop="keywords" content="TeX,Hugo," />
+<meta itemprop="name" content="Math_test">
+<meta itemprop="description" content="In this post we have an overview over simple, yet useful formulas
+Completing the square $$x^2 &#43; bx &#43; c = (x &#43; \frac{b}{2})^2 - \frac{b^2}{4} &#43; c$$
+Quadratic formula Die Wurzeln von $$ax^2 &#43; bx &#43; c$$ sind $$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$"><meta itemprop="datePublished" content="2021-08-27T22:37:59+02:00" />
+<meta itemprop="dateModified" content="2021-08-27T22:37:59+02:00" />
+<meta itemprop="wordCount" content="44"><meta itemprop="image" content="https://blog.martinez-ayuso.ch/"/>
+<meta itemprop="keywords" content="untagged," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.martinez-ayuso.ch/"/>
 
-<meta name="twitter:title" content="How to Add TeX Support in Hugo"/>
-<meta name="twitter:description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."/>
+<meta name="twitter:title" content="Math_test"/>
+<meta name="twitter:description" content="In this post we have an overview over simple, yet useful formulas
+Completing the square $$x^2 &#43; bx &#43; c = (x &#43; \frac{b}{2})^2 - \frac{b^2}{4} &#43; c$$
+Quadratic formula Die Wurzeln von $$ax^2 &#43; bx &#43; c$$ sind $$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$"/>
 
 
 
 
-    <meta property="og:title" content="How to Add TeX Support in Hugo" />
-<meta property="og:description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
+    <meta property="og:title" content="Math_test" />
+<meta property="og:description" content="In this post we have an overview over simple, yet useful formulas
+Completing the square $$x^2 &#43; bx &#43; c = (x &#43; \frac{b}{2})^2 - \frac{b^2}{4} &#43; c$$
+Quadratic formula Die Wurzeln von $$ax^2 &#43; bx &#43; c$$ sind $$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/" /><meta property="og:image" content="https://blog.martinez-ayuso.ch/"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-08-27T16:04:35+02:00" />
-<meta property="article:modified_time" content="2021-08-27T16:04:35+02:00" />
+<meta property="og:url" content="https://blog.martinez-ayuso.ch/posts/2021/08/math_test/" /><meta property="og:image" content="https://blog.martinez-ayuso.ch/"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-27T22:37:59+02:00" />
+<meta property="article:modified_time" content="2021-08-27T22:37:59+02:00" />
 
 
 
@@ -64,7 +76,7 @@
 
 
 
-    <meta property="article:published_time" content="2021-08-27 16:04:35 &#43;0200 CEST" />
+    <meta property="article:published_time" content="2021-08-27 22:37:59 &#43;0200 CEST" />
 
 
 
@@ -133,7 +145,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        2 minutes
+        One minute
 
         
       </p>
@@ -141,7 +153,7 @@
 
     <article>
         <h1 class="post-title">
-            <a href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/">How to Add TeX Support in Hugo</a>
+            <a href="https://blog.martinez-ayuso.ch/posts/2021/08/math_test/">Math_test</a>
         </h1>
 
         
@@ -160,41 +172,11 @@
         
 
         <div class="post-content">
-            <p>In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you.</p>
-<p>First of all, we create a file called <code>katex.html</code> inside the <code>partials</code> folder which you can find in the <code>layouts</code> folder. Inside it, we paste the following code:</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css&quot; integrity=&quot;sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn&quot; crossorigin=&quot;anonymous&quot;&gt;
-&lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js&quot; integrity=&quot;sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js&quot; integrity=&quot;sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl&quot; crossorigin=&quot;anonymous&quot;
-        onload=&quot;renderMathInElement(document.body);&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>This is the auto-render extension of KaTeX, which, as the name suggests, automatically renders all of the TeX math inside a text. For more information, refer to this <a href="https://katex.org/docs/autorender.html">page</a>.</p>
-<p>Afterwards, we switch to the <code>posts</code> folder which is located inside the <code>layouts</code> folder as well. There we add a copy of the <code>single.html</code> file from the <code>themes/YOUR-THEME/layouts/posts</code> folder and insert the following code inside the <code>&lt;article&gt;</code> element:</p>
-<pre><code>{{ if .Params.katex}}
-    {{ partial &quot;katex.html&quot; . }}
-{{ end }}
-</code></pre>
-<p>In a nutshell, this piece of code uses the KaTeX auto-render I mentioned above to render all of the TeX Code it can find inside the blog post, assuming that the post contains the line <code>katex: true</code> in its front matter.</p>
-<p>We are pretty much done and we can see that this TeX code</p>
-<pre><code>$$\int \frac{1}{x-2}$$
-</code></pre>
-<p>outputs the following $$\int \frac{1}{x-2}$$ which in turn shows that the KaTeX auto-render is working.</p>
-<h3 id="bonus">Bonus</h3>
-<p>In order to automatically add the <code>katex</code> line inside the front matter of every blog post, we can override the current archetype of a blog post. To do so, we simply go inside the <code>archetypes</code> folder and add a file called <code>posts.md</code>. Inside that file, we add the following code:</p>
-<pre><code>---
-title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
-date: {{ .Date }}
-draft: true
-toc: false
-katex: false
-images:
-tags:
-  - untagged
----
-</code></pre>
-<p>If that file already exists in that folder, simply add <code>katex: false</code> somewhere in the front matter.</p>
-<p>The <code>posts.md</code> file basically represents the front matter of every blog post we create from now on. If you are using TeX code inside your post and want to render it, simply set <code>katex: true</code>.</p>
-<p>I hope you could follow this small tutorial and that you achieved the desired result.</p>
-<p>Have a great day! 😄</p>
+            <p>In this post we have an overview over simple, yet useful formulas</p>
+<h3 id="completing-the-square">Completing the square</h3>
+<p>$$x^2 + bx + c = (x + \frac{b}{2})^2 - \frac{b^2}{4} + c$$</p>
+<h3 id="quadratic-formula">Quadratic formula</h3>
+<p>Die Wurzeln von $$ax^2 + bx + c$$ sind $$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</p>
 
         </div>
     </article>
@@ -206,8 +188,7 @@ tags:
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/tex/">TeX</a></span>
-        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/hugo/">Hugo</a></span>
+        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/untagged/">untagged</a></span>
         
     </p>
 
@@ -221,7 +202,7 @@ tags:
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        420 Words
+        44 Words
       </p>
 
       <p>
@@ -232,7 +213,7 @@ tags:
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         
-          2021-08-27 16:04
+          2021-08-27 22:37
         
 
          
@@ -252,13 +233,20 @@ tags:
 
             
             
+            <span class="button next">
+                <a href="https://blog.martinez-ayuso.ch/posts/2021/09/about-invariants/">
+                    <span class="button__text">About Invariants</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
 
             
             
             <span class="button previous">
-                <a href="https://blog.martinez-ayuso.ch/posts/2021/08/hello-world/">
+                <a href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/">
                     <span class="button__icon">←</span>
-                    <span class="button__text">Hello, World!</span>
+                    <span class="button__text">How to Add TeX Support in Hugo</span>
                 </a>
             </span>
             

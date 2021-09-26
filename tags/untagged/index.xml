@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>untagged on Adrian&#39;s Blog</title>
+    <link>https://blog.martinez-ayuso.ch/tags/untagged/</link>
+    <description>Recent content in untagged on Adrian&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Sep 2021 12:31:13 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Invariants</title>
+      <link>https://blog.martinez-ayuso.ch/posts/2021/09/about-invariants/</link>
+      <pubDate>Sun, 19 Sep 2021 12:31:13 +0200</pubDate>
+      
+      <guid>https://blog.martinez-ayuso.ch/posts/2021/09/about-invariants/</guid>
+      <description>What is an invariant?
+ Nobody wants to hear this question from a fellow CS student towards the end of the semester. If you still don&amp;rsquo;t fully grasp</description>
+    </item>
+    
+    <item>
+      <title>Math_test</title>
+      <link>https://blog.martinez-ayuso.ch/posts/2021/08/math_test/</link>
+      <pubDate>Fri, 27 Aug 2021 22:37:59 +0200</pubDate>
+      
+      <guid>https://blog.martinez-ayuso.ch/posts/2021/08/math_test/</guid>
+      <description>In this post we have an overview over simple, yet useful formulas
+Completing the square $$x^2 + bx + c = (x + \frac{b}{2})^2 - \frac{b^2}{4} + c$$
+Quadratic formula Die Wurzeln von $$ax^2 + bx + c$$ sind $$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</description>
+    </item>
+    
+  </channel>
+</rss>
