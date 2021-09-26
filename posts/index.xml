@@ -5,8 +5,40 @@
         <description>Recent content in Posts on Adrian&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 27 Aug 2021 16:04:35 +0200</lastBuildDate>
+        <lastBuildDate>Sun, 26 Sep 2021 20:52:53 +0200</lastBuildDate>
         <atom:link href="https://blog.martinez-ayuso.ch/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Adding Inline Math to KaTeX</title>
+            <link>https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/</link>
+            <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
+            
+            <guid>https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/</guid>
+            <description>In my last post we saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this: $$\int \frac{1}{x-2}$$ To enable inline math, we can simply open our katex.html partial from the last post and add the following script at the end of the file:
+&amp;lt;script&amp;gt;document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function () {renderMathInElement(document.</description>
+            <content type="html"><![CDATA[<p>In my <a href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/">last post</a> we 
+saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes 
+still don&rsquo;t allow inline math, i.e. we can only render equations in their own line like this: 
+$$\int \frac{1}{x-2}$$
+To enable inline math, we can simply open our <code>katex.html</code> partial from the last post and add the 
+following script at the end of the file:</p>
+<pre><code>&lt;script&gt;
+    document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: &quot;$$&quot;, right: &quot;$$&quot;, display: true },
+                { left: &quot;$&quot;, right: &quot;$&quot;, display: false }
+            ]
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+<p>We can see that the following markdown line</p>
+<pre><code>$a^2 + b^2 = c^2$
+</code></pre>
+<p>outputs $ a^2 + b^2 = c^2$ which shows that inline math is now supported.</p>
+]]></content>
+        </item>
         
         <item>
             <title>How to Add TeX Support in Hugo</title>

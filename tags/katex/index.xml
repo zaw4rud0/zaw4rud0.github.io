@@ -6,16 +6,24 @@
     <description>Recent content in KaTeX on Adrian&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Aug 2021 20:15:52 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/katex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Sep 2021 20:52:53 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/katex/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TeX Support in Hugo</title>
-      <link>https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/</link>
-      <pubDate>Mon, 23 Aug 2021 20:15:52 +0200</pubDate>
+      <title>Adding Inline Math to KaTeX</title>
+      <link>https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/</link>
+      <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
       
-      <guid>https://blog.martinez-ayuso.ch/posts/tex-support-in-hugo/</guid>
-      <description>In this article I want to show how you can add TeX code in your Hugo website.
-Chances are that you are already familiar with Hugo and how it works. If you are not, that&amp;rsquo;s no problem.
-This is an example: $$\int \frac{1}{x-2}$$</description>
+      <guid>https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/</guid>
+      <description>In my last post we saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this: $$\int \frac{1}{x-2}$$ To enable inline math, we can simply open our katex.html partial from the last post and add the following script at the end of the file:
+&amp;lt;script&amp;gt;document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function () {renderMathInElement(document.</description>
+    </item>
+    
+    <item>
+      <title>How to Add TeX Support in Hugo</title>
+      <link>https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
+      <pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate>
+      
+      <guid>https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
+      <description>In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.</description>
     </item>
     
   </channel>

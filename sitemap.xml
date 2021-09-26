@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.martinez-ayuso.ch/</loc>
-    <lastmod>2021-08-27T16:04:35+02:00</lastmod>
+    <loc>https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/</loc>
+    <lastmod>2021-09-26T20:52:53+02:00</lastmod>
   </url><url>
-    <loc>https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/</loc>
-    <lastmod>2021-08-27T16:04:35+02:00</lastmod>
+    <loc>https://blog.martinez-ayuso.ch/</loc>
+    <lastmod>2021-09-26T20:52:53+02:00</lastmod>
   </url><url>
     <loc>https://blog.martinez-ayuso.ch/tags/hugo/</loc>
-    <lastmod>2021-08-27T16:04:35+02:00</lastmod>
+    <lastmod>2021-09-26T20:52:53+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.martinez-ayuso.ch/tags/katex/</loc>
+    <lastmod>2021-09-26T20:52:53+02:00</lastmod>
   </url><url>
     <loc>https://blog.martinez-ayuso.ch/posts/</loc>
-    <lastmod>2021-08-27T16:04:35+02:00</lastmod>
+    <lastmod>2021-09-26T20:52:53+02:00</lastmod>
   </url><url>
     <loc>https://blog.martinez-ayuso.ch/tags/</loc>
-    <lastmod>2021-08-27T16:04:35+02:00</lastmod>
+    <lastmod>2021-09-26T20:52:53+02:00</lastmod>
   </url><url>
-    <loc>https://blog.martinez-ayuso.ch/tags/tex/</loc>
+    <loc>https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/</loc>
     <lastmod>2021-08-27T16:04:35+02:00</lastmod>
   </url><url>
     <loc>https://blog.martinez-ayuso.ch/summaries/</loc>

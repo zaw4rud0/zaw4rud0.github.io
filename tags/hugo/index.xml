@@ -6,7 +6,17 @@
     <description>Recent content in Hugo on Adrian&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 16:04:35 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Sep 2021 20:52:53 +0200</lastBuildDate><atom:link href="https://blog.martinez-ayuso.ch/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Inline Math to KaTeX</title>
+      <link>https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/</link>
+      <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
+      
+      <guid>https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/</guid>
+      <description>In my last post we saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this: $$\int \frac{1}{x-2}$$ To enable inline math, we can simply open our katex.html partial from the last post and add the following script at the end of the file:
+&amp;lt;script&amp;gt;document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function () {renderMathInElement(document.</description>
+    </item>
+    
     <item>
       <title>How to Add TeX Support in Hugo</title>
       <link>https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/</link>

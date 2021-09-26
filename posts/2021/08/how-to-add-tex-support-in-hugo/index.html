@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Adrian Martinez ">
 <meta name="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
-<meta name="keywords" content=", TeX, Hugo" />
+<meta name="keywords" content=", KaTeX, Hugo" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/" />
@@ -41,7 +41,7 @@
 <meta itemprop="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."><meta itemprop="datePublished" content="2021-08-27T16:04:35+02:00" />
 <meta itemprop="dateModified" content="2021-08-27T16:04:35+02:00" />
 <meta itemprop="wordCount" content="420"><meta itemprop="image" content="https://blog.martinez-ayuso.ch/"/>
-<meta itemprop="keywords" content="TeX,Hugo," />
+<meta itemprop="keywords" content="KaTeX,Hugo," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.martinez-ayuso.ch/"/>
 
@@ -152,9 +152,22 @@
         
             
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false }
+            ]
+        });
+    });
+</script>
         
 
         
@@ -206,7 +219,7 @@ tags:
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/tex/">TeX</a></span>
+        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/katex/">KaTeX</a></span>
         <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/hugo/">Hugo</a></span>
         
     </p>
@@ -252,9 +265,6 @@ tags:
 
             
             
-
-            
-            
             <span class="button previous">
                 <a href="https://blog.martinez-ayuso.ch/posts/2021/08/hello-world/">
                     <span class="button__icon">←</span>
@@ -262,6 +272,17 @@ tags:
                 </a>
             </span>
             
+
+            
+            
+            <span class="button next">
+                <a href="https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/">
+                    <span class="button__text">Adding Inline Math to KaTeX</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+
         </div>
     </div>
 
