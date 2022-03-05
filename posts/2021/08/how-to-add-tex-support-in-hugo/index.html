@@ -4,34 +4,34 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Adrian Martinez ">
+<meta name="author" content="Za Warudo ">
 <meta name="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
 <meta name="keywords" content=", KaTeX, Hugo" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/" />
+<link rel="canonical" href="https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/" />
 
 
     <title>
         
-            How to Add TeX Support in Hugo :: Adrian&#39;s Blog 
+            How to Add TeX Support in Hugo :: Za&#39;s Site 
         
     </title>
 
 
 
 
-<link rel="stylesheet" href="https://blog.martinez-ayuso.ch/main.ec6d710ef21a7ac8d17d76057a9c26338212d2efe9c1888bc6839994b2861213.css">
+<link rel="stylesheet" href="https://zawarudo.dev/main.ec6d710ef21a7ac8d17d76057a9c26338212d2efe9c1888bc6839994b2861213.css">
 
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://blog.martinez-ayuso.ch/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://blog.martinez-ayuso.ch/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://blog.martinez-ayuso.ch/favicon-16x16.png">
-    <link rel="manifest" href="https://blog.martinez-ayuso.ch/site.webmanifest">
-    <link rel="mask-icon" href="https://blog.martinez-ayuso.ch/safari-pinned-tab.svg" color="#1b1c1d">
-    <link rel="shortcut icon" href="https://blog.martinez-ayuso.ch/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://zawarudo.dev/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://zawarudo.dev/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://zawarudo.dev/favicon-16x16.png">
+    <link rel="manifest" href="https://zawarudo.dev/site.webmanifest">
+    <link rel="mask-icon" href="https://zawarudo.dev/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://zawarudo.dev/favicon.ico">
     <meta name="msapplication-TileColor" content="#1b1c1d">
     <meta name="theme-color" content="#1b1c1d">
 
@@ -40,10 +40,10 @@
 <meta itemprop="name" content="How to Add TeX Support in Hugo">
 <meta itemprop="description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."><meta itemprop="datePublished" content="2021-08-27T16:04:35+02:00" />
 <meta itemprop="dateModified" content="2021-08-27T16:04:35+02:00" />
-<meta itemprop="wordCount" content="420"><meta itemprop="image" content="https://blog.martinez-ayuso.ch/"/>
+<meta itemprop="wordCount" content="420"><meta itemprop="image" content="https://zawarudo.dev/"/>
 <meta itemprop="keywords" content="KaTeX,Hugo," />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://blog.martinez-ayuso.ch/"/>
+<meta name="twitter:image" content="https://zawarudo.dev/"/>
 
 <meta name="twitter:title" content="How to Add TeX Support in Hugo"/>
 <meta name="twitter:description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you."/>
@@ -54,7 +54,7 @@
     <meta property="og:title" content="How to Add TeX Support in Hugo" />
 <meta property="og:description" content="In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/" /><meta property="og:image" content="https://blog.martinez-ayuso.ch/"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/" /><meta property="og:image" content="https://zawarudo.dev/"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-27T16:04:35+02:00" />
 <meta property="article:modified_time" content="2021-08-27T16:04:35+02:00" />
 
@@ -84,7 +84,7 @@
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="https://blog.martinez-ayuso.ch/" style="text-decoration: none;">
+        <a href="https://zawarudo.dev/" style="text-decoration: none;">
     <div class="logo">
         
             <span class="logo__mark">&gt;</span>
@@ -102,7 +102,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://blog.martinez-ayuso.ch/posts/">Posts</a></li><li><a href="https://blog.martinez-ayuso.ch/summaries/">Summaries</a></li><li><a href="https://blog.martinez-ayuso.ch/about/">About</a></li>
+    <ul class="menu__inner"><li><a href="https://zawarudo.dev/posts/">Posts</a></li><li><a href="https://zawarudo.dev/summaries/">Summaries</a></li><li><a href="https://zawarudo.dev/about/">About</a></li>
     </ul>
 </nav>
 
@@ -141,7 +141,7 @@
 
     <article>
         <h1 class="post-title">
-            <a href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/">How to Add TeX Support in Hugo</a>
+            <a href="https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/">How to Add TeX Support in Hugo</a>
         </h1>
 
         
@@ -219,8 +219,8 @@ tags:
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/katex/">KaTeX</a></span>
-        <span class="tag"><a href="https://blog.martinez-ayuso.ch/tags/hugo/">Hugo</a></span>
+        <span class="tag"><a href="https://zawarudo.dev/tags/katex/">KaTeX</a></span>
+        <span class="tag"><a href="https://zawarudo.dev/tags/hugo/">Hugo</a></span>
         
     </p>
 
@@ -266,7 +266,7 @@ tags:
             
             
             <span class="button previous">
-                <a href="https://blog.martinez-ayuso.ch/posts/2021/08/hello-world/">
+                <a href="https://zawarudo.dev/posts/2021/08/hello-world/">
                     <span class="button__icon">←</span>
                     <span class="button__text">Hello, World!</span>
                 </a>
@@ -276,7 +276,7 @@ tags:
             
             
             <span class="button next">
-                <a href="https://blog.martinez-ayuso.ch/posts/2021/09/adding-inline-math-to-katex/">
+                <a href="https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/">
                     <span class="button__text">Adding Inline Math to KaTeX</span>
                     <span class="button__icon">→</span>
                 </a>
@@ -300,10 +300,10 @@ tags:
     
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2021</span>
-            <span><a href="https://blog.martinez-ayuso.ch/">Adrian Martinez</a></span>
+            <span>&copy; 2022</span>
+            <span><a href="https://zawarudo.dev/">Za Warudo</a></span>
             
-            <span><a href="https://blog.martinez-ayuso.ch/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span><a href="https://zawarudo.dev/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
             
         </div>
     </div>
@@ -324,7 +324,7 @@ tags:
 
 
 
-<script type="text/javascript" src="https://blog.martinez-ayuso.ch/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+<script type="text/javascript" src="https://zawarudo.dev/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
 
 
 
