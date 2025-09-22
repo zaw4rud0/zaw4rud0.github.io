@@ -1,162 +1,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Za&#39;s Site</title>
-        <link>https://zawarudo.dev/posts/</link>
+        <link>https://zaw4rud0.github.io/posts/</link>
         <description>Recent content in Posts on Za&#39;s Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 02 Oct 2021 13:30:16 +0200</lastBuildDate>
-        <atom:link href="https://zawarudo.dev/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Getting Started With Hugo in Windows</title>
-            <link>https://zawarudo.dev/posts/2021/10/getting-started-with-hugo-in-windows/</link>
-            <pubDate>Sat, 02 Oct 2021 13:30:16 +0200</pubDate>
-            
-            <guid>https://zawarudo.dev/posts/2021/10/getting-started-with-hugo-in-windows/</guid>
-            <description>Introduction Hugo is a so-called static site generator written in GoLang, and it&amp;rsquo;s strong suit lies in speed and flexibility. Furthermore, Hugo is relatively easy to use and beginner-friendly. Since a blog is usually a personal static website, Hugo is very suitable for that. In this post, I want to show how you can quickly set up a simple blog using Hugo in Windows. Additionally, I want to explain how you can use GitHub Pages to host your blog, so that it&amp;rsquo;s available on the internet 24/7.</description>
-            <content type="html"><![CDATA[
-    <img src="/images/hugo_logo.png"  alt="hugo_logo.png"  class="center"  />
-
-
-<h2 id="introduction">Introduction</h2>
-<p>Hugo is a so-called static site generator written in GoLang, and it&rsquo;s strong suit lies in speed 
-and flexibility. Furthermore, Hugo is relatively easy to use and beginner-friendly. Since a blog 
-is usually a personal static website, Hugo is very suitable for that. In this post, I want to show
-how you can quickly set up a simple blog using Hugo in Windows. Additionally, I want to explain how
-you can use GitHub Pages to host your blog, so that it&rsquo;s available on the internet 24/7.</p>
-<h2 id="installing-packages">Installing Packages</h2>
-<p>For starters, we need to install a few packages. This can be done with the pre-installed Windows 
-application PowerShell, but I recommend using Windows Terminal, which can be 
-<a href="https://www.microsoft.com/de-ch/p/windows-terminal/9n0dx20hk701">downloaded</a> from the Microsoft 
-Store. Once the installation is complete, simply run the application as administrator.</p>
-<h3 id="chocolatey">Chocolatey</h3>
-<p>The first thing we want to install is a package manager called <a href="https://chocolatey.org/">Chocolatey</a>.
-An alternative is <a href="https://scoop.sh/">Scoop</a>, but in this post we will stick to former. In the
-Windows Terminal we type the following line:</p>
-<pre><code>Get-ExecutionPolicy
-</code></pre>
-<p>If the terminal returns <code>Restricted</code>, we need to change that using</p>
-<pre><code>Set-ExecutionPolicy AllSigned
-</code></pre>
-<p>Afterwards we install Chocolatey using the following line:</p>
-<pre><code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-</code></pre>
-<p>Once the process is finished, we can run</p>
-<pre><code>choco
-</code></pre>
-<p>to check if it&rsquo;s properly installed. In my case, it returns the following:</p>
-
-    <img src="/images/img_006.jpg"  alt="img_006.jpg"  class="center"  />
-
-
-<h3 id="hugo">Hugo</h3>
-<p>Now we need to install the Hugo package to be able to create a blog and run it. We can do that 
-using Chocolatey we just installed using the following line in the Windows Terminal:</p>
-<pre><code>choco install hugo -confirm
-</code></pre>
-<p>If you plan on using advanced languages like SCSS, install Hugo Extended instead.</p>
-<pre><code>choco install hugo-extended -confirm
-</code></pre>
-<p>With that we have everything we need to start a new Hugo blog.</p>
-<h2 id="creating-a-new-blog-and-installing-a-theme">Creating a new blog and installing a theme</h2>
-<p>To create a brand new blog, simply go inside the directory where you want your blog to be and
-type:</p>
-<pre><code>hugo new site myblog
-</code></pre>
-<p>If you have a specific name for your blog in mind, simply replace <code>myblog</code> with that name. After 
-running the command, your blog folder should have the following files and folders:</p>
-
-    <img src="/images/img_007.jpg"  alt="img_007.jpg"  class="center"  />
-
-
-<p>If we open <code>config.toml</code> file, we can see the following:</p>
-<pre><code>baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-</code></pre>
-<p>As you can see, this file only contains default values and need to be adjusted accordingly. I 
-recommend checking out <a href="https://gohugo.io/getting-started/configuration/">this page</a> to see all
-the different configuration settings. We will come back to this later.</p>
-<p>Next up, we have to option to choose a Hugo theme (unless you want to build your own Hugo theme from 
-scratch, which is a lot of work and not recommendable for beginners). To see all available and 
-free themes, we can either use <a href="https://themes.gohugo.io">https://themes.gohugo.io</a> or 
-<a href="https://hugothemesfree.com/">https://hugothemesfree.com/</a>, and choose a specific theme. In my 
-case, I chose <a href="https://themes.gohugo.io/themes/hugo-papermod/">PaperMod</a>, since it&rsquo;s simple and 
-minimalistic. Each theme should have a small section explaining how to install it.</p>
-<p>Depending on what you want to do, there are two different approaches when it comes to installing a 
-theme. Simply skip the other approach after choosing one.</p>
-<h3 id="installing-via-git-clone">Installing via git clone</h3>
-<p>If you don&rsquo;t plan to make any changes to the theme, you can simply clone the theme via git. To do
-that, simply switch to the <code>themes</code> folder and open Windows Terminal. There you want to run the 
-following command:</p>
-<pre><code>git clone https://github.com/adityatelange/hugo-PaperMod.git
-</code></pre>
-<p>If you decided on a different theme, simply replace the link with the one of your theme. This approach 
-has the advantage that you can always get the latest features from the developers of the 
-theme. Finally, we need update our <code>config.toml</code> file with the following line:</p>
-<pre><code>theme: &quot;PaperMod&quot;
-</code></pre>
-<p>Again, if you took a different theme, replace <code>&quot;PaperMod&quot;</code> with the name of your theme.</p>
-<h3 id="installing-manually">Installing manually</h3>
-<p>This approach is intended if you plan to tweak the theme to suit your needs. Simply download the theme
-as a <code>zip</code> file from the website and unpack it inside the <code>themes</code> folder.</p>
-<p>In my case with Hugo PaperMod, I can download the <code>zip</code> file using this <a href="https://github.com/adityatelange/hugo-PaperMod/archive/master.zip">link</a>.</p>
-<p>Lastly, we update our <code>config.toml</code> file with the following line:</p>
-<pre><code>theme: &quot;PaperMod&quot;
-</code></pre>
-<p>If you decided on a different theme, simply replace <code>&quot;PaperMod&quot;</code> with the name of the theme of your 
-choice.</p>
-<h2 id="running-the-blog-and-preview">Running the blog and preview</h2>
-<p>Once we finished the above steps, we can run the following command</p>
-<pre><code>hugo server
-</code></pre>
-<p>which allows us to view the blog under <a href="http://localhost:1313">http://localhost:1313</a>. For me, it looks like this:</p>
-<p>[WIP]</p>
-<ul>
-<li>Preview</li>
-</ul>
-<h2 id="writing-your-first-post">Writing your first post</h2>
-<p>Once our blog is ready and set up, we can create our first post. To do that, simply enter</p>
-<pre><code>hugo new posts/my-first-post.md
-</code></pre>
-<p>in the terminal. Basically it creates a new markdown file <code>my-first-post.md</code> inside the <code>posts</code>
-folder. If you open the file, you can see that the title and date was automatically filled inside
-the front matter.</p>
-<p>[WIP]</p>
-<ul>
-<li>Explain what the front matter is, and how one can change it</li>
-</ul>
-<h2 id="hosting-using-github-pages">Hosting using GitHub Pages</h2>
-<p>GitHub offers a great service called GitHub Pages to host your own static website. Hugo works
-very well with it, and many people use that service to host their personal blog. In this post
-I want to show you how you can use GitHub Pages to host your blog as well. The only requirement
-is to have a GitHub account, which you can create quickly and for free.</p>
-<p>The first thing we need to do is to create a GitHub Repository named <em><strong>username</strong></em>.github.io with
-<em><strong>username</strong></em> being the name of your GitHub account.</p>
-]]></content>
-        </item>
+        <lastBuildDate>Thu, 28 Apr 2022 18:00:37 +0200</lastBuildDate>
+        <atom:link href="https://zaw4rud0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Creating Your Own Discord Bot</title>
-            <link>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</link>
+            <link>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</link>
             <pubDate>Mon, 27 Sep 2021 21:07:34 +0200</pubDate>
             
-            <guid>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</guid>
-            <description>Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won&amp;rsquo;t go into depth in that regard.</description>
+            <guid>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</guid>
+            <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and
+running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using
+&lt;a href=&#34;https://www.eclipse.org/downloads/packages/installer&#34;&gt;Eclipse&lt;/a&gt; and &lt;a href=&#34;https://github.com/DV8FromTheWorld/JDA&#34;&gt;JDA&lt;/a&gt; to create
+a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install
+Java and Eclipse, I won&amp;rsquo;t go into depth in that regard.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and 
-running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using 
-<a href="https://www.eclipse.org/downloads/packages/installer">Eclipse</a> and <a href="https://github.com/DV8FromTheWorld/JDA">JDA</a> to create 
-a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install 
+<p>Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and
+running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using
+<a href="https://www.eclipse.org/downloads/packages/installer">Eclipse</a> and <a href="https://github.com/DV8FromTheWorld/JDA">JDA</a> to create
+a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install
 Java and Eclipse, I won&rsquo;t go into depth in that regard.</p>
 <h2 id="setup">Setup</h2>
 <h3 id="setting-up-your-ide">Setting up your IDE</h3>
-<p>First things first, you need to make sure you have the right JDK version installed and the <code>JAVA_HOME</code> environment variable 
-properly set. If you don&rsquo;t, or are not sure how to do those things, please check out this 
+<p>First things first, you need to make sure you have the right JDK version installed and the <code>JAVA_HOME</code> environment variable
+properly set. If you don&rsquo;t, or are not sure how to do those things, please check out this
 <a href="https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/diepm/epm_set_java_home_104x6dd63633_106x6dd6441c.html">page</a>.
-Once you have done it, we can proceed to the next step which is installing Eclipse and setting it up, so that we can start to 
-code. For that, simply download the latest version of Eclipse <a href="https://www.eclipse.org/downloads/packages/installer">here</a> and 
+Once you have done it, we can proceed to the next step which is installing Eclipse and setting it up, so that we can start to
+code. For that, simply download the latest version of Eclipse <a href="https://www.eclipse.org/downloads/packages/installer">here</a> and
 install it.</p>
 <p>As soon as the installation finishes, you can set your workspace, which is just a folder where your projects will be created.
 If you don&rsquo;t have any folder in mind, I recommend creating a folder in your desktop and using it as your workspace so you don&rsquo;t
@@ -166,7 +42,7 @@ lose sight of your Java projects.</p>
     <img src="/images/img_001.jpg"  alt="img_001.jpg"  class="center"  />
 
 
-<p>Since the brightness is causing damage to my eyes, we will change the appearance of Eclipse to dark mode. This can be done by 
+<p>Since the brightness is causing damage to my eyes, we will change the appearance of Eclipse to dark mode. This can be done by
 going to <code>Window</code> &gt; <code>Preferences</code> &gt; Open the dropdown under <code>General</code> &gt; <code>Appearance</code> and selecting <code>Dark</code> under <code>Theme</code>. With that out
 of the way we are now all set to start coding.</p>
 <h3 id="creating-a-project-and-setup">Creating a project and setup</h3>
@@ -174,69 +50,67 @@ of the way we are now all set to start coding.</p>
 select the project build. Note that you can use either Gradle or Maven for our Discord bot, it doesn&rsquo;t really matter for a simple
 project such as our bot. In this post I will go with Maven, so you open the dropdown under <code>Maven</code> and select <code>Maven Project</code>. Click
 on <code>Next</code>, tick the first two options and click on <code>Next</code> again.</p>
-<p>Now we are on the page where we have to choose a <code>Group Id</code> and an <code>Artifact Id</code> for our Maven project. Simple choose an username 
-as the <code>Group Id</code> and the name of your bot as the <code>Artifact Id</code>. You can fill the remaining fields however you want as they don&rsquo;t 
+<p>Now we are on the page where we have to choose a <code>Group Id</code> and an <code>Artifact Id</code> for our Maven project. Simple choose an username
+as the <code>Group Id</code> and the name of your bot as the <code>Artifact Id</code>. You can fill the remaining fields however you want as they don&rsquo;t
 really matter for now.</p>
 
     <img src="/images/img_002.jpg"  alt="img_002.jpg"  class="center"  />
 
 
-<p>Now click on <code>Finish</code> and you should see your project appear in the package explorer which is on the left side. Maybe you can also 
-see at the bottom that your project is being built. Simply wait a few seconds for the process to finish. Your project should now 
+<p>Now click on <code>Finish</code> and you should see your project appear in the package explorer which is on the left side. Maybe you can also
+see at the bottom that your project is being built. Simply wait a few seconds for the process to finish. Your project should now
 look like this:</p>
 
     <img src="/images/img_003.jpg"  alt="img_003.jpg"  class="center"  />
 
 
-<p>As you might have noticed, we got a few warnings from the compiler. The issue can be fixed easily by opening our <code>pom.xml</code> file and 
+<p>As you might have noticed, we got a few warnings from the compiler. The issue can be fixed easily by opening our <code>pom.xml</code> file and
 adding the following snippet below the <code>&lt;description&gt;</code> tag:</p>
-<pre><code class="language-xml">&lt;properties&gt;
-	&lt;maven.compiler.source&gt;16&lt;/maven.compiler.source&gt;
-	&lt;maven.compiler.target&gt;16&lt;/maven.compiler.target&gt;
-&lt;/properties&gt;
-
-&lt;build&gt;
-	&lt;plugins&gt;
-		&lt;plugin&gt;
-			&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-			&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
-			&lt;version&gt;3.8.0&lt;/version&gt;
-			&lt;configuration&gt;
-				&lt;source&gt;16&lt;/source&gt;
-				&lt;target&gt;16&lt;/target&gt;
-			&lt;/configuration&gt;
-		&lt;/plugin&gt;
-	&lt;/plugins&gt;
-&lt;/build&gt;
-</code></pre>
-<p>If you don&rsquo;t have JDK 16 installed, simply replace every <code>16</code> with your JDK version.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;properties&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;maven.compiler.source&gt;</span>16<span style="color:#f92672">&lt;/maven.compiler.source&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;maven.compiler.target&gt;</span>16<span style="color:#f92672">&lt;/maven.compiler.target&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/properties&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;plugins&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;plugin&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;groupId&gt;</span>org.apache.maven.plugins<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;artifactId&gt;</span>maven-compiler-plugin<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;version&gt;</span>3.8.0<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;configuration&gt;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;source&gt;</span>16<span style="color:#f92672">&lt;/source&gt;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;target&gt;</span>16<span style="color:#f92672">&lt;/target&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;/configuration&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;/plugin&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/plugins&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/build&gt;</span>
+</span></span></code></pre></div><p>If you don&rsquo;t have JDK 16 installed, simply replace every <code>16</code> with your JDK version.</p>
 <p>Once you saved your changes to the file, simply right-click your project, go under <code>Maven</code> &gt; <code>Update Project...</code> and click on <code>OK</code>
 to build your project. After the process finished all warnings should disappear.</p>
 <h3 id="adding-dependencies">Adding Dependencies</h3>
 <p>Now we need to add the <code>Java Discord API</code> library, <code>JDA</code> for short, as a dependency to our project. This can be done by adding the
 following snippet to your <code>pom.xml</code> file just below the <code>&lt;/build&gt;</code> tag:</p>
-<pre><code class="language-xml">&lt;dependencies&gt;
-	&lt;dependency&gt;
-		&lt;groupId&gt;net.dv8tion&lt;/groupId&gt;
-		&lt;artifactId&gt;JDA&lt;/artifactId&gt;
-		&lt;version&gt;4.3.0_331&lt;/version&gt;
-	&lt;/dependency&gt;
-&lt;/dependencies&gt;
-
-&lt;repositories&gt;
-	&lt;repository&gt;
-		&lt;id&gt;dv8tion&lt;/id&gt;
-		&lt;name&gt;m2-dv8tion&lt;/name&gt;
-		&lt;url&gt;https://m2.dv8tion.net/releases&lt;/url&gt;
-	&lt;/repository&gt;
-&lt;/repositories&gt;
-</code></pre>
-<p>After that, you can build the project again so that all the necessary dependencies are automatically added to your project. You should 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependencies&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;groupId&gt;</span>net.dv8tion<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;artifactId&gt;</span>JDA<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;version&gt;</span>4.3.0_331<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependencies&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;repositories&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;repository&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;id&gt;</span>dv8tion<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;name&gt;</span>m2-dv8tion<span style="color:#f92672">&lt;/name&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;url&gt;</span>https://m2.dv8tion.net/releases<span style="color:#f92672">&lt;/url&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/repository&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/repositories&gt;</span>
+</span></span></code></pre></div><p>After that, you can build the project again so that all the necessary dependencies are automatically added to your project. You should
 be able to find them under <code>Maven Dependencies</code> in your project folder.</p>
 <p>With that we are pretty much done with the setup, and this is where the fun starts.</p>
 <h2 id="creating-a-discord-bot">Creating a Discord bot</h2>
-<p>Before we are able to program our bot, we need to create a Discord bot account. This can be done by going to the 
-<a href="https://discord.com/developers">Developer Portal</a> of Discord and then clicking on <code>New Application</code> on the right side. A small window 
+<p>Before we are able to program our bot, we need to create a Discord bot account. This can be done by going to the
+<a href="https://discord.com/developers">Developer Portal</a> of Discord and then clicking on <code>New Application</code> on the right side. A small window
 should pop up where you can enter the name of your bot.</p>
 
     <img src="/images/img_004.jpg"  alt="img_004.jpg"  class="center"  />
@@ -248,105 +122,111 @@ name suggests this button creates a bot account.</p>
     <img src="/images/img_005.jpg"  alt="img_005.jpg"  class="center"  />
 
 
-<p>Never share your bot token with anyone unless you really trust them. If you accidentally leak your token, make sure to generate a new 
+<p>Never share your bot token with anyone unless you really trust them. If you accidentally leak your token, make sure to generate a new
 one by clicking on <code>Regenerate</code>.</p>
 <p>To invite the bot to your server, simply use this link and replace <code>BOT_ID</code> with the id of your bot:</p>
-<pre><code>https://discord.com/api/oauth2/authorize?client_id=BOT_ID&amp;permissions=0&amp;scope=bot
-</code></pre>
-<h2 id="coding-the-bot">Coding the bot</h2>
+<pre tabindex="0"><code>https://discord.com/api/oauth2/authorize?client_id=BOT_ID&amp;permissions=0&amp;scope=bot
+</code></pre><h2 id="coding-the-bot">Coding the bot</h2>
 <h3 id="creating-a-bot-instance">Creating a bot instance</h3>
-<pre><code class="language-java">JDABuilder builder = JDABuilder.createDefault(&quot;BOT_TOKEN&quot;);
-JDA jda = builder.build();
-</code></pre>
-<p>Right now, our bot can&rsquo;t do anything except going online and offline. For it to be able to react to commands or messages in general
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>JDABuilder builder <span style="color:#f92672">=</span> JDABuilder.<span style="color:#a6e22e">createDefault</span>(<span style="color:#e6db74">&#34;BOT_TOKEN&#34;</span>);
+</span></span><span style="display:flex;"><span>JDA jda <span style="color:#f92672">=</span> builder.<span style="color:#a6e22e">build</span>();
+</span></span></code></pre></div><p>Right now, our bot can&rsquo;t do anything except going online and offline. For it to be able to react to commands or messages in general
 we need to implement an EventListener.</p>
 <h3 id="listening-to-events">Listening to events</h3>
 <p>The backbone of a Discord bot is the ability to listen to various so-called events, for example when an user sends a message in a channel,
-the bot will receive a <code>MessageReceivedEvent</code> and thus can react to the message. But for that, we need to create an event listener, i.e. 
+the bot will receive a <code>MessageReceivedEvent</code> and thus can react to the message. But for that, we need to create an event listener, i.e.
 a class for the purpose of receiving events.</p>
 <p>In our project, we want to create a class called <code>EventListener</code> which extends <code>ListenerAdapter</code>:</p>
-<pre><code class="language-java">import net.dv8tion.jda.api.hooks.ListenerAdapter;
-
-public class EventListener extends ListenerAdapter {
-
-}
-</code></pre>
-<p>Now we need to override a method called <code>onMessageReceived</code> from <code>ListenerAdapter</code>, so that it suits our needs.</p>
-<pre><code class="language-java">import net.dv8tion.jda.api.hooks.ListenerAdapter;
-
-public class EventListener extends ListenerAdapter {
-	
-	@Override
-	public void onMessageReceived(MessageReceivedEvent event) {
-		event.getMessage().reply(&quot;I received your message!&quot;).queue();
-	}
-}
-</code></pre>
-<p>In this example, we changed our method to make our bot reply to each message with &ldquo;I received your message!&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> net.dv8tion.jda.api.hooks.ListenerAdapter;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EventListener</span> <span style="color:#66d9ef">extends</span> ListenerAdapter {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now we need to override a method called <code>onMessageReceived</code> from <code>ListenerAdapter</code>, so that it suits our needs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> net.dv8tion.jda.api.hooks.ListenerAdapter;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EventListener</span> <span style="color:#66d9ef">extends</span> ListenerAdapter {
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onMessageReceived</span>(MessageReceivedEvent event) {
+</span></span><span style="display:flex;"><span>		event.<span style="color:#a6e22e">getMessage</span>().<span style="color:#a6e22e">reply</span>(<span style="color:#e6db74">&#34;I received your message!&#34;</span>).<span style="color:#a6e22e">queue</span>();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this example, we changed our method to make our bot reply to each message with &ldquo;I received your message!&rdquo;.</p>
 ]]></content>
         </item>
         
         <item>
             <title>Adding Inline Math to KaTeX</title>
-            <link>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</link>
+            <link>https://zaw4rud0.github.io/posts/2021/09/adding-inline-math-to-katex/</link>
             <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
             
-            <guid>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</guid>
-            <description>In my last post we saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this: $$\int \frac{1}{x-2}$$ To enable inline math, we can simply open our katex.html partial from the last post and add the following script at the end of the file:
-&amp;lt;script&amp;gt;document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function () {renderMathInElement(document.</description>
-            <content type="html"><![CDATA[<p>In my <a href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/">last post</a> we 
-saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes 
-still don&rsquo;t allow inline math, i.e. we can only render equations in their own line like this: 
+            <guid>https://zaw4rud0.github.io/posts/2021/09/adding-inline-math-to-katex/</guid>
+            <description>&lt;p&gt;In my &lt;a href=&#34;https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/&#34;&gt;last post&lt;/a&gt; we
+saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes
+still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this:
 $$\int \frac{1}{x-2}$$
-To enable inline math, we can simply open our <code>katex.html</code> partial from the last post and add the 
-following script at the end of the file:</p>
-<pre><code>&lt;script&gt;
-    document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
+To enable inline math, we can simply open our &lt;code&gt;katex.html&lt;/code&gt; partial from the last post and add the
+following script at the end of the file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+    document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function () {
         renderMathInElement(document.body, {
             delimiters: [
-                { left: &quot;$$&quot;, right: &quot;$$&quot;, display: true },
-                { left: &quot;$&quot;, right: &quot;$&quot;, display: false }
+                { left: &amp;#34;$$&amp;#34;, right: &amp;#34;$$&amp;#34;, display: true },
+                { left: &amp;#34;$&amp;#34;, right: &amp;#34;$&amp;#34;, display: false }
+            ]
+        });
+    });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can see that the following markdown line&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>In my <a href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/">last post</a> we
+saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes
+still don&rsquo;t allow inline math, i.e. we can only render equations in their own line like this:
+$$\int \frac{1}{x-2}$$
+To enable inline math, we can simply open our <code>katex.html</code> partial from the last post and add the
+following script at the end of the file:</p>
+<pre tabindex="0"><code>&lt;script&gt;
+    document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: &#34;$$&#34;, right: &#34;$$&#34;, display: true },
+                { left: &#34;$&#34;, right: &#34;$&#34;, display: false }
             ]
         });
     });
 &lt;/script&gt;
-</code></pre>
-<p>We can see that the following markdown line</p>
-<pre><code>$a^2 + b^2 = c^2$
-</code></pre>
-<p>outputs $ a^2 + b^2 = c^2$ which shows that inline math is now supported.</p>
+</code></pre><p>We can see that the following markdown line</p>
+<pre tabindex="0"><code>$a^2 + b^2 = c^2$
+</code></pre><p>outputs $ a^2 + b^2 = c^2$ which shows that inline math is now supported.</p>
 ]]></content>
         </item>
         
         <item>
             <title>How to Add TeX Support in Hugo</title>
-            <link>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
+            <link>https://zaw4rud0.github.io/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
             <pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate>
             
-            <guid>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
-            <description>In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.</description>
+            <guid>https://zaw4rud0.github.io/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
+            <description>&lt;p&gt;In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you.</p>
 <p>First of all, we create a file called <code>katex.html</code> inside the <code>partials</code> folder which you can find in the <code>layouts</code> folder. Inside it, we paste the following code:</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css&quot; integrity=&quot;sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn&quot; crossorigin=&quot;anonymous&quot;&gt;
-&lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js&quot; integrity=&quot;sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js&quot; integrity=&quot;sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl&quot; crossorigin=&quot;anonymous&quot;
-        onload=&quot;renderMathInElement(document.body);&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>This is the auto-render extension of KaTeX, which, as the name suggests, automatically renders all of the TeX math inside a text. For more information, refer to this <a href="https://katex.org/docs/autorender.html">page</a>.</p>
+<pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css&#34; integrity=&#34;sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn&#34; crossorigin=&#34;anonymous&#34;&gt;
+&lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js&#34; integrity=&#34;sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script defer src=&#34;https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js&#34; integrity=&#34;sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl&#34; crossorigin=&#34;anonymous&#34;
+        onload=&#34;renderMathInElement(document.body);&#34;&gt;&lt;/script&gt;
+</code></pre><p>This is the auto-render extension of KaTeX, which, as the name suggests, automatically renders all of the TeX math inside a text. For more information, refer to this <a href="https://katex.org/docs/autorender.html">page</a>.</p>
 <p>Afterwards, we switch to the <code>posts</code> folder which is located inside the <code>layouts</code> folder as well. There we add a copy of the <code>single.html</code> file from the <code>themes/YOUR-THEME/layouts/posts</code> folder and insert the following code inside the <code>&lt;article&gt;</code> element:</p>
-<pre><code>{{ if .Params.katex}}
-    {{ partial &quot;katex.html&quot; . }}
+<pre tabindex="0"><code>{{ if .Params.katex}}
+    {{ partial &#34;katex.html&#34; . }}
 {{ end }}
-</code></pre>
-<p>In a nutshell, this piece of code uses the KaTeX auto-render I mentioned above to render all of the TeX Code it can find inside the blog post, assuming that the post contains the line <code>katex: true</code> in its front matter.</p>
+</code></pre><p>In a nutshell, this piece of code uses the KaTeX auto-render I mentioned above to render all of the TeX Code it can find inside the blog post, assuming that the post contains the line <code>katex: true</code> in its front matter.</p>
 <p>We are pretty much done and we can see that this TeX code</p>
-<pre><code>$$\int \frac{1}{x-2}$$
-</code></pre>
-<p>outputs the following $$\int \frac{1}{x-2}$$ which in turn shows that the KaTeX auto-render is working.</p>
+<pre tabindex="0"><code>$$\int \frac{1}{x-2}$$
+</code></pre><p>outputs the following $$\int \frac{1}{x-2}$$ which in turn shows that the KaTeX auto-render is working.</p>
 <h3 id="bonus">Bonus</h3>
 <p>In order to automatically add the <code>katex</code> line inside the front matter of every blog post, we can override the current archetype of a blog post. To do so, we simply go inside the <code>archetypes</code> folder and add a file called <code>posts.md</code>. Inside that file, we add the following code:</p>
-<pre><code>---
-title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
+<pre tabindex="0"><code>---
+title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 date: {{ .Date }}
 draft: true
 toc: false
@@ -355,28 +235,29 @@ images:
 tags:
   - untagged
 ---
-</code></pre>
-<p>If that file already exists in that folder, simply add <code>katex: false</code> somewhere in the front matter.</p>
+</code></pre><p>If that file already exists in that folder, simply add <code>katex: false</code> somewhere in the front matter.</p>
 <p>The <code>posts.md</code> file basically represents the front matter of every blog post we create from now on. If you are using TeX code inside your post and want to render it, simply set <code>katex: true</code>.</p>
 <p>I hope you could follow this small tutorial and that you achieved the desired result.</p>
-<p>Have a great day! 😄</p>
+<p>Have a great day! &#x1f604;</p>
 ]]></content>
         </item>
         
         <item>
             <title>Hello, World!</title>
-            <link>https://zawarudo.dev/posts/2021/08/hello-world/</link>
+            <link>https://zaw4rud0.github.io/posts/2021/08/hello-world/</link>
             <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
             
-            <guid>https://zawarudo.dev/posts/2021/08/hello-world/</guid>
-            <description>This is my very first post on this blog. Obligatory code:
-public static void main(String[] args) {System.out.println(&amp;quot;Hello, World!&amp;quot;);} I hope you enjoy your stay on this blog, and I will see you again very soon.</description>
+            <guid>https://zaw4rud0.github.io/posts/2021/08/hello-world/</guid>
+            <description>&lt;p&gt;This is my very first post on this blog. Obligatory code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I hope you enjoy your stay on this blog, and I will see you again very soon.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>This is my very first post on this blog. Obligatory code:</p>
-<pre><code class="language-java">public static void main(String[] args) {
-	System.out.println(&quot;Hello, World!&quot;);
-}
-</code></pre>
-<p>I hope you enjoy your stay on this blog, and I will see you again very soon.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>	System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I hope you enjoy your stay on this blog, and I will see you again very soon.</p>
 ]]></content>
         </item>
         

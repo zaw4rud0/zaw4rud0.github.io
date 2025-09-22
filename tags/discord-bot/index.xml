@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Discord Bot on Za&#39;s Site</title>
-    <link>https://zawarudo.dev/tags/discord-bot/</link>
+    <link>https://zaw4rud0.github.io/tags/discord-bot/</link>
     <description>Recent content in Discord Bot on Za&#39;s Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Sep 2021 21:07:34 +0200</lastBuildDate><atom:link href="https://zawarudo.dev/tags/discord-bot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Sep 2021 21:07:34 +0200</lastBuildDate>
+    <atom:link href="https://zaw4rud0.github.io/tags/discord-bot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Your Own Discord Bot</title>
-      <link>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</link>
+      <link>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</link>
       <pubDate>Mon, 27 Sep 2021 21:07:34 +0200</pubDate>
-      
-      <guid>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</guid>
-      <description>Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won&amp;rsquo;t go into depth in that regard.</description>
+      <guid>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and&#xA;running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using&#xA;&lt;a href=&#34;https://www.eclipse.org/downloads/packages/installer&#34;&gt;Eclipse&lt;/a&gt; and &lt;a href=&#34;https://github.com/DV8FromTheWorld/JDA&#34;&gt;JDA&lt;/a&gt; to create&#xA;a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install&#xA;Java and Eclipse, I won&amp;rsquo;t go into depth in that regard.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

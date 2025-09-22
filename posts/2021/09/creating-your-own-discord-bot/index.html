@@ -3,61 +3,67 @@
     <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Za Warudo ">
-<meta name="description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won&amp;rsquo;t go into depth in that regard." />
+<meta name="author" content="">
+<meta name="description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won&rsquo;t go into depth in that regard.
+" />
 <meta name="keywords" content=", Java, Discord Bot" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/" />
+<link rel="canonical" href="https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/" />
 
 
-    <title>
-        
-            Creating Your Own Discord Bot :: Za&#39;s Site 
-        
-    </title>
-
-
-
-
-<link rel="stylesheet" href="https://zawarudo.dev/main.ec6d710ef21a7ac8d17d76057a9c26338212d2efe9c1888bc6839994b2861213.css">
+<title>
+  
+  Creating Your Own Discord Bot • Za&#39;s Site 
+  
+</title>
 
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://zawarudo.dev/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://zawarudo.dev/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://zawarudo.dev/favicon-16x16.png">
-    <link rel="manifest" href="https://zawarudo.dev/site.webmanifest">
-    <link rel="mask-icon" href="https://zawarudo.dev/safari-pinned-tab.svg" color="#1b1c1d">
-    <link rel="shortcut icon" href="https://zawarudo.dev/favicon.ico">
-    <meta name="msapplication-TileColor" content="#1b1c1d">
-    <meta name="theme-color" content="#1b1c1d">
 
-
-
-<meta itemprop="name" content="Creating Your Own Discord Bot">
-<meta itemprop="description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won&rsquo;t go into depth in that regard."><meta itemprop="datePublished" content="2021-09-27T21:07:34+02:00" />
-<meta itemprop="dateModified" content="2021-09-27T21:07:34+02:00" />
-<meta itemprop="wordCount" content="1018"><meta itemprop="image" content="https://zawarudo.dev/"/>
-<meta itemprop="keywords" content="Java,Discord Bot," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://zawarudo.dev/"/>
-
-<meta name="twitter:title" content="Creating Your Own Discord Bot"/>
-<meta name="twitter:description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won&rsquo;t go into depth in that regard."/>
+  <link rel="stylesheet" href="https://zaw4rud0.github.io/main.min.6803129f078433aa56977a953f83cfa9c52cfb8828f43970d5d549cf5b749126.css" integrity="sha256-aAMSnweEM6pWl3qVP4PPqcUs&#43;4go9Dlw1dVJz1t0kSY=" crossorigin="anonymous">
 
 
 
 
-    <meta property="og:title" content="Creating Your Own Discord Bot" />
-<meta property="og:description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won&rsquo;t go into depth in that regard." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/" /><meta property="og:image" content="https://zawarudo.dev/"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-09-27T21:07:34+02:00" />
-<meta property="article:modified_time" content="2021-09-27T21:07:34+02:00" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="https://zaw4rud0.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://zaw4rud0.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://zaw4rud0.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://zaw4rud0.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://zaw4rud0.github.io/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="https://zaw4rud0.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Creating Your Own Discord Bot">
+  <meta itemprop="description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won’t go into depth in that regard.">
+  <meta itemprop="datePublished" content="2021-09-27T21:07:34+02:00">
+  <meta itemprop="dateModified" content="2021-09-27T21:07:34+02:00">
+  <meta itemprop="wordCount" content="1018">
+  <meta itemprop="keywords" content="Java,Discord Bot">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Creating Your Own Discord Bot">
+  <meta name="twitter:description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won’t go into depth in that regard.">
+
+
+
+    <meta property="og:url" content="https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/">
+  <meta property="og:site_name" content="Za&#39;s Site">
+  <meta property="og:title" content="Creating Your Own Discord Bot">
+  <meta property="og:description" content="Introduction Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using Eclipse and JDA to create a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install Java and Eclipse, I won’t go into depth in that regard.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-09-27T21:07:34+02:00">
+    <meta property="article:modified_time" content="2021-09-27T21:07:34+02:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Discord Bot">
 
 
 
@@ -65,6 +71,8 @@
 
 
     <meta property="article:published_time" content="2021-09-27 21:07:34 &#43;0200 CEST" />
+
+
 
 
 
@@ -84,15 +92,16 @@
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="https://zawarudo.dev/" style="text-decoration: none;">
+        <a href="https://zaw4rud0.github.io/" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">&gt;</span>
-            <span class="logo__text">Home</span>
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                hello</span>
             <span class="logo__cursor" style=
                   "
-                   background-color:#0093b7;
-                   animation-duration:1,75s;">
+                   
+                   ">
             </span>
         
     </div>
@@ -100,9 +109,8 @@
 
 
         <span class="header__right">
-            
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://zawarudo.dev/posts/">Posts</a></li><li><a href="https://zawarudo.dev/summaries/">Summaries</a></li><li><a href="https://zawarudo.dev/about/">About</a></li>
+    <ul class="menu__inner"><li><a href="https://zaw4rud0.github.io/posts/">Posts</a></li><li><a href="https://zaw4rud0.github.io/projects/">Projects</a></li><li><a href="https://zaw4rud0.github.io/summaries/">Summaries</a></li><li><a href="https://zaw4rud0.github.io/about/">About</a></li>
     </ul>
 </nav>
 
@@ -112,7 +120,6 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
-            
                 <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
    <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
    3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
@@ -125,32 +132,32 @@
 
             <div class="content">
                 
-  <main class="post">
+<main class="post">
 
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        5 minutes
+  <div class="post-info">
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-clock">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      5 minutes
+    </p>
+  </div>
 
-        
-      </p>
-    </div>
+  <article>
+    <h1 class="post-title">
+      <a href="https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/">Creating Your Own Discord Bot</a>
+    </h1>
 
-    <article>
-        <h1 class="post-title">
-            <a href="https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/">Creating Your Own Discord Bot</a>
-        </h1>
+    
 
-        
-
-        
-        <hr />
-        <aside id="toc">
-            <div class="toc-title">Table of Contents</div>
-            <nav id="TableOfContents">
+    
+    <hr />
+    <aside id="toc">
+      <div class="toc-title">Table of Contents</div>
+      <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#setup">Setup</a>
@@ -169,38 +176,36 @@
     </li>
   </ul>
 </nav>
-        </aside>
-        <hr />
+    </aside>
+    <hr />
 
-        
-        
+    
+    
 
-        
-
-        <div class="post-content">
-            <h2 id="introduction">Introduction</h2>
-<p>Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and 
-running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using 
-<a href="https://www.eclipse.org/downloads/packages/installer">Eclipse</a> and <a href="https://github.com/DV8FromTheWorld/JDA">JDA</a> to create 
-a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install 
+    <div class="post-content">
+      <h2 id="introduction">Introduction</h2>
+<p>Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and
+running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using
+<a href="https://www.eclipse.org/downloads/packages/installer">Eclipse</a> and <a href="https://github.com/DV8FromTheWorld/JDA">JDA</a> to create
+a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install
 Java and Eclipse, I won&rsquo;t go into depth in that regard.</p>
 <h2 id="setup">Setup</h2>
 <h3 id="setting-up-your-ide">Setting up your IDE</h3>
-<p>First things first, you need to make sure you have the right JDK version installed and the <code>JAVA_HOME</code> environment variable 
-properly set. If you don&rsquo;t, or are not sure how to do those things, please check out this 
+<p>First things first, you need to make sure you have the right JDK version installed and the <code>JAVA_HOME</code> environment variable
+properly set. If you don&rsquo;t, or are not sure how to do those things, please check out this
 <a href="https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/diepm/epm_set_java_home_104x6dd63633_106x6dd6441c.html">page</a>.
-Once you have done it, we can proceed to the next step which is installing Eclipse and setting it up, so that we can start to 
-code. For that, simply download the latest version of Eclipse <a href="https://www.eclipse.org/downloads/packages/installer">here</a> and 
+Once you have done it, we can proceed to the next step which is installing Eclipse and setting it up, so that we can start to
+code. For that, simply download the latest version of Eclipse <a href="https://www.eclipse.org/downloads/packages/installer">here</a> and
 install it.</p>
 <p>As soon as the installation finishes, you can set your workspace, which is just a folder where your projects will be created.
 If you don&rsquo;t have any folder in mind, I recommend creating a folder in your desktop and using it as your workspace so you don&rsquo;t
 lose sight of your Java projects.</p>
 <p>At this point, you are most likely greeted by this screen:</p>
 
-    <img src="https://zawarudo.dev/images/img_001.jpg"  alt="img_001.jpg"  class="center"  />
+    <img src="https://zaw4rud0.github.io/images/img_001.jpg"  alt="img_001.jpg"  class="center"  />
 
 
-<p>Since the brightness is causing damage to my eyes, we will change the appearance of Eclipse to dark mode. This can be done by 
+<p>Since the brightness is causing damage to my eyes, we will change the appearance of Eclipse to dark mode. This can be done by
 going to <code>Window</code> &gt; <code>Preferences</code> &gt; Open the dropdown under <code>General</code> &gt; <code>Appearance</code> and selecting <code>Dark</code> under <code>Theme</code>. With that out
 of the way we are now all set to start coding.</p>
 <h3 id="creating-a-project-and-setup">Creating a project and setup</h3>
@@ -208,162 +213,160 @@ of the way we are now all set to start coding.</p>
 select the project build. Note that you can use either Gradle or Maven for our Discord bot, it doesn&rsquo;t really matter for a simple
 project such as our bot. In this post I will go with Maven, so you open the dropdown under <code>Maven</code> and select <code>Maven Project</code>. Click
 on <code>Next</code>, tick the first two options and click on <code>Next</code> again.</p>
-<p>Now we are on the page where we have to choose a <code>Group Id</code> and an <code>Artifact Id</code> for our Maven project. Simple choose an username 
-as the <code>Group Id</code> and the name of your bot as the <code>Artifact Id</code>. You can fill the remaining fields however you want as they don&rsquo;t 
+<p>Now we are on the page where we have to choose a <code>Group Id</code> and an <code>Artifact Id</code> for our Maven project. Simple choose an username
+as the <code>Group Id</code> and the name of your bot as the <code>Artifact Id</code>. You can fill the remaining fields however you want as they don&rsquo;t
 really matter for now.</p>
 
-    <img src="https://zawarudo.dev/images/img_002.jpg"  alt="img_002.jpg"  class="center"  />
+    <img src="https://zaw4rud0.github.io/images/img_002.jpg"  alt="img_002.jpg"  class="center"  />
 
 
-<p>Now click on <code>Finish</code> and you should see your project appear in the package explorer which is on the left side. Maybe you can also 
-see at the bottom that your project is being built. Simply wait a few seconds for the process to finish. Your project should now 
+<p>Now click on <code>Finish</code> and you should see your project appear in the package explorer which is on the left side. Maybe you can also
+see at the bottom that your project is being built. Simply wait a few seconds for the process to finish. Your project should now
 look like this:</p>
 
-    <img src="https://zawarudo.dev/images/img_003.jpg"  alt="img_003.jpg"  class="center"  />
+    <img src="https://zaw4rud0.github.io/images/img_003.jpg"  alt="img_003.jpg"  class="center"  />
 
 
-<p>As you might have noticed, we got a few warnings from the compiler. The issue can be fixed easily by opening our <code>pom.xml</code> file and 
+<p>As you might have noticed, we got a few warnings from the compiler. The issue can be fixed easily by opening our <code>pom.xml</code> file and
 adding the following snippet below the <code>&lt;description&gt;</code> tag:</p>
-<pre><code class="language-xml">&lt;properties&gt;
-	&lt;maven.compiler.source&gt;16&lt;/maven.compiler.source&gt;
-	&lt;maven.compiler.target&gt;16&lt;/maven.compiler.target&gt;
-&lt;/properties&gt;
-
-&lt;build&gt;
-	&lt;plugins&gt;
-		&lt;plugin&gt;
-			&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-			&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
-			&lt;version&gt;3.8.0&lt;/version&gt;
-			&lt;configuration&gt;
-				&lt;source&gt;16&lt;/source&gt;
-				&lt;target&gt;16&lt;/target&gt;
-			&lt;/configuration&gt;
-		&lt;/plugin&gt;
-	&lt;/plugins&gt;
-&lt;/build&gt;
-</code></pre>
-<p>If you don&rsquo;t have JDK 16 installed, simply replace every <code>16</code> with your JDK version.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;properties&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;maven.compiler.source&gt;</span>16<span style="color:#f92672">&lt;/maven.compiler.source&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;maven.compiler.target&gt;</span>16<span style="color:#f92672">&lt;/maven.compiler.target&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/properties&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;plugins&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;plugin&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;groupId&gt;</span>org.apache.maven.plugins<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;artifactId&gt;</span>maven-compiler-plugin<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;version&gt;</span>3.8.0<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;configuration&gt;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;source&gt;</span>16<span style="color:#f92672">&lt;/source&gt;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#f92672">&lt;target&gt;</span>16<span style="color:#f92672">&lt;/target&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;/configuration&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;/plugin&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/plugins&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/build&gt;</span>
+</span></span></code></pre></div><p>If you don&rsquo;t have JDK 16 installed, simply replace every <code>16</code> with your JDK version.</p>
 <p>Once you saved your changes to the file, simply right-click your project, go under <code>Maven</code> &gt; <code>Update Project...</code> and click on <code>OK</code>
 to build your project. After the process finished all warnings should disappear.</p>
 <h3 id="adding-dependencies">Adding Dependencies</h3>
 <p>Now we need to add the <code>Java Discord API</code> library, <code>JDA</code> for short, as a dependency to our project. This can be done by adding the
 following snippet to your <code>pom.xml</code> file just below the <code>&lt;/build&gt;</code> tag:</p>
-<pre><code class="language-xml">&lt;dependencies&gt;
-	&lt;dependency&gt;
-		&lt;groupId&gt;net.dv8tion&lt;/groupId&gt;
-		&lt;artifactId&gt;JDA&lt;/artifactId&gt;
-		&lt;version&gt;4.3.0_331&lt;/version&gt;
-	&lt;/dependency&gt;
-&lt;/dependencies&gt;
-
-&lt;repositories&gt;
-	&lt;repository&gt;
-		&lt;id&gt;dv8tion&lt;/id&gt;
-		&lt;name&gt;m2-dv8tion&lt;/name&gt;
-		&lt;url&gt;https://m2.dv8tion.net/releases&lt;/url&gt;
-	&lt;/repository&gt;
-&lt;/repositories&gt;
-</code></pre>
-<p>After that, you can build the project again so that all the necessary dependencies are automatically added to your project. You should 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependencies&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;groupId&gt;</span>net.dv8tion<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;artifactId&gt;</span>JDA<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;version&gt;</span>4.3.0_331<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependencies&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;repositories&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;repository&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;id&gt;</span>dv8tion<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;name&gt;</span>m2-dv8tion<span style="color:#f92672">&lt;/name&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;url&gt;</span>https://m2.dv8tion.net/releases<span style="color:#f92672">&lt;/url&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/repository&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/repositories&gt;</span>
+</span></span></code></pre></div><p>After that, you can build the project again so that all the necessary dependencies are automatically added to your project. You should
 be able to find them under <code>Maven Dependencies</code> in your project folder.</p>
 <p>With that we are pretty much done with the setup, and this is where the fun starts.</p>
 <h2 id="creating-a-discord-bot">Creating a Discord bot</h2>
-<p>Before we are able to program our bot, we need to create a Discord bot account. This can be done by going to the 
-<a href="https://discord.com/developers">Developer Portal</a> of Discord and then clicking on <code>New Application</code> on the right side. A small window 
+<p>Before we are able to program our bot, we need to create a Discord bot account. This can be done by going to the
+<a href="https://discord.com/developers">Developer Portal</a> of Discord and then clicking on <code>New Application</code> on the right side. A small window
 should pop up where you can enter the name of your bot.</p>
 
-    <img src="https://zawarudo.dev/images/img_004.jpg"  alt="img_004.jpg"  class="center"  />
+    <img src="https://zaw4rud0.github.io/images/img_004.jpg"  alt="img_004.jpg"  class="center"  />
 
 
 <p>In my case I chose the creative name <code>SimpleBot</code>. In the application page you can jump to <code>Bot</code> and click the button <code>Add Bot</code>. As the
 name suggests this button creates a bot account.</p>
 
-    <img src="https://zawarudo.dev/images/img_005.jpg"  alt="img_005.jpg"  class="center"  />
+    <img src="https://zaw4rud0.github.io/images/img_005.jpg"  alt="img_005.jpg"  class="center"  />
 
 
-<p>Never share your bot token with anyone unless you really trust them. If you accidentally leak your token, make sure to generate a new 
+<p>Never share your bot token with anyone unless you really trust them. If you accidentally leak your token, make sure to generate a new
 one by clicking on <code>Regenerate</code>.</p>
 <p>To invite the bot to your server, simply use this link and replace <code>BOT_ID</code> with the id of your bot:</p>
-<pre><code>https://discord.com/api/oauth2/authorize?client_id=BOT_ID&amp;permissions=0&amp;scope=bot
-</code></pre>
-<h2 id="coding-the-bot">Coding the bot</h2>
+<pre tabindex="0"><code>https://discord.com/api/oauth2/authorize?client_id=BOT_ID&amp;permissions=0&amp;scope=bot
+</code></pre><h2 id="coding-the-bot">Coding the bot</h2>
 <h3 id="creating-a-bot-instance">Creating a bot instance</h3>
-<pre><code class="language-java">JDABuilder builder = JDABuilder.createDefault(&quot;BOT_TOKEN&quot;);
-JDA jda = builder.build();
-</code></pre>
-<p>Right now, our bot can&rsquo;t do anything except going online and offline. For it to be able to react to commands or messages in general
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>JDABuilder builder <span style="color:#f92672">=</span> JDABuilder.<span style="color:#a6e22e">createDefault</span>(<span style="color:#e6db74">&#34;BOT_TOKEN&#34;</span>);
+</span></span><span style="display:flex;"><span>JDA jda <span style="color:#f92672">=</span> builder.<span style="color:#a6e22e">build</span>();
+</span></span></code></pre></div><p>Right now, our bot can&rsquo;t do anything except going online and offline. For it to be able to react to commands or messages in general
 we need to implement an EventListener.</p>
 <h3 id="listening-to-events">Listening to events</h3>
 <p>The backbone of a Discord bot is the ability to listen to various so-called events, for example when an user sends a message in a channel,
-the bot will receive a <code>MessageReceivedEvent</code> and thus can react to the message. But for that, we need to create an event listener, i.e. 
+the bot will receive a <code>MessageReceivedEvent</code> and thus can react to the message. But for that, we need to create an event listener, i.e.
 a class for the purpose of receiving events.</p>
 <p>In our project, we want to create a class called <code>EventListener</code> which extends <code>ListenerAdapter</code>:</p>
-<pre><code class="language-java">import net.dv8tion.jda.api.hooks.ListenerAdapter;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> net.dv8tion.jda.api.hooks.ListenerAdapter;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EventListener</span> <span style="color:#66d9ef">extends</span> ListenerAdapter {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now we need to override a method called <code>onMessageReceived</code> from <code>ListenerAdapter</code>, so that it suits our needs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> net.dv8tion.jda.api.hooks.ListenerAdapter;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EventListener</span> <span style="color:#66d9ef">extends</span> ListenerAdapter {
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onMessageReceived</span>(MessageReceivedEvent event) {
+</span></span><span style="display:flex;"><span>		event.<span style="color:#a6e22e">getMessage</span>().<span style="color:#a6e22e">reply</span>(<span style="color:#e6db74">&#34;I received your message!&#34;</span>).<span style="color:#a6e22e">queue</span>();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this example, we changed our method to make our bot reply to each message with &ldquo;I received your message!&rdquo;.</p>
 
-public class EventListener extends ListenerAdapter {
+    </div>
+  </article>
 
-}
-</code></pre>
-<p>Now we need to override a method called <code>onMessageReceived</code> from <code>ListenerAdapter</code>, so that it suits our needs.</p>
-<pre><code class="language-java">import net.dv8tion.jda.api.hooks.ListenerAdapter;
+  <hr />
 
-public class EventListener extends ListenerAdapter {
-	
-	@Override
-	public void onMessageReceived(MessageReceivedEvent event) {
-		event.getMessage().reply(&quot;I received your message!&quot;).queue();
-	}
-}
-</code></pre>
-<p>In this example, we changed our method to make our bot reply to each message with &ldquo;I received your message!&rdquo;.</p>
-
-        </div>
-    </article>
-
-    <hr />
-
-    <div class="post-info">
-      
+  <div class="post-info">
+    
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://zawarudo.dev/tags/java/">Java</a></span>
-        <span class="tag"><a href="https://zawarudo.dev/tags/discord-bot/">Discord Bot</a></span>
+        <span class="tag"><a href="https://zaw4rud0.github.io/tags/java/">Java</a></span>
+        <span class="tag"><a href="https://zaw4rud0.github.io/tags/discord-bot/">Discord Bot</a></span>
         
     </p>
 
+    
+
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-file-text">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+        <polyline points="10 9 9 9 8 9"></polyline>
+      </svg>
+      1018 Words
+    </p>
+
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-calendar">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg>
+      
+      2021-09-27 21:07
       
 
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        1018 Words
-      </p>
+      
+      
+      
+    </p>
+  </div>
 
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        
-          2021-09-27 21:07
-        
-
-         
-          
-        
-      </p>
-    </div>
-
-    
+  
     <div class="pagination">
         <div class="pagination__title">
             <span class="pagination__title-h"></span>
@@ -375,7 +378,7 @@ public class EventListener extends ListenerAdapter {
             
             
             <span class="button previous">
-                <a href="https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/">
+                <a href="https://zaw4rud0.github.io/posts/2021/09/adding-inline-math-to-katex/">
                     <span class="button__icon">←</span>
                     <span class="button__text">Adding Inline Math to KaTeX</span>
                 </a>
@@ -384,23 +387,14 @@ public class EventListener extends ListenerAdapter {
 
             
             
-            <span class="button next">
-                <a href="https://zawarudo.dev/posts/2021/10/getting-started-with-hugo-in-windows/">
-                    <span class="button__text">Getting Started With Hugo in Windows</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
 
         </div>
     </div>
 
 
-    
+  
 
-    
-
-  </main>
+</main>
 
             </div>
 
@@ -409,10 +403,10 @@ public class EventListener extends ListenerAdapter {
     
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2022</span>
-            <span><a href="https://zawarudo.dev/">Za Warudo</a></span>
+            <span>&copy; 2025</span>
+            <span><a href="https://zaw4rud0.github.io/">Za Warudo</a></span>
             
-            <span><a href="https://zawarudo.dev/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span><a href="https://zaw4rud0.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
             
         </div>
     </div>
@@ -433,7 +427,8 @@ public class EventListener extends ListenerAdapter {
 
 
 
-<script type="text/javascript" src="https://zawarudo.dev/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+<script type="text/javascript" src="https://zaw4rud0.github.io/bundle.min.257531934bfbdf8527f52eab4b38eb8211337125b54dae74132499837c006508dae0d544e859d909af1be266d147861c1c1e688de0f7d2cc2f258de78a9b8a6a.js" integrity="sha512-JXUxk0v734Un9S6rSzjrghEzcSW1Ta50EySZg3wAZQja4NVE6FnZCa8b4mbRR4YcHB5ojeD30swvJY3nipuKag=="></script>
+
 
 
 
