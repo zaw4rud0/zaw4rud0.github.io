@@ -39,9 +39,28 @@ If you don&rsquo;t have any folder in mind, I recommend creating a folder in you
 lose sight of your Java projects.</p>
 <p>At this point, you are most likely greeted by this screen:</p>
 
-    <img src="/images/img_001.jpg"  alt="img_001.jpg"  class="center"  />
 
 
+
+
+
+
+   
+
+
+
+
+
+<figure class="hf-image center">
+  <img
+    src="/images/img_001.jpg"
+    alt="img_001.jpg"
+    
+    loading="lazy" decoding="async"
+    
+    >
+  
+</figure>
 <p>Since the brightness is causing damage to my eyes, we will change the appearance of Eclipse to dark mode. This can be done by
 going to <code>Window</code> &gt; <code>Preferences</code> &gt; Open the dropdown under <code>General</code> &gt; <code>Appearance</code> and selecting <code>Dark</code> under <code>Theme</code>. With that out
 of the way we are now all set to start coding.</p>
@@ -54,16 +73,54 @@ on <code>Next</code>, tick the first two options and click on <code>Next</code> 
 as the <code>Group Id</code> and the name of your bot as the <code>Artifact Id</code>. You can fill the remaining fields however you want as they don&rsquo;t
 really matter for now.</p>
 
-    <img src="/images/img_002.jpg"  alt="img_002.jpg"  class="center"  />
 
 
+
+
+
+
+   
+
+
+
+
+
+<figure class="hf-image center">
+  <img
+    src="/images/img_002.jpg"
+    alt="img_002.jpg"
+    
+    loading="lazy" decoding="async"
+    
+    >
+  
+</figure>
 <p>Now click on <code>Finish</code> and you should see your project appear in the package explorer which is on the left side. Maybe you can also
 see at the bottom that your project is being built. Simply wait a few seconds for the process to finish. Your project should now
 look like this:</p>
 
-    <img src="/images/img_003.jpg"  alt="img_003.jpg"  class="center"  />
 
 
+
+
+
+
+   
+
+
+
+
+
+<figure class="hf-image center">
+  <img
+    src="/images/img_003.jpg"
+    alt="img_003.jpg"
+    
+    loading="lazy" decoding="async"
+    
+    >
+  
+</figure>
 <p>As you might have noticed, we got a few warnings from the compiler. The issue can be fixed easily by opening our <code>pom.xml</code> file and
 adding the following snippet below the <code>&lt;description&gt;</code> tag:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;properties&gt;</span>
@@ -113,15 +170,53 @@ be able to find them under <code>Maven Dependencies</code> in your project folde
 <a href="https://discord.com/developers">Developer Portal</a> of Discord and then clicking on <code>New Application</code> on the right side. A small window
 should pop up where you can enter the name of your bot.</p>
 
-    <img src="/images/img_004.jpg"  alt="img_004.jpg"  class="center"  />
 
 
+
+
+
+
+   
+
+
+
+
+
+<figure class="hf-image center">
+  <img
+    src="/images/img_004.jpg"
+    alt="img_004.jpg"
+    
+    loading="lazy" decoding="async"
+    
+    >
+  
+</figure>
 <p>In my case I chose the creative name <code>SimpleBot</code>. In the application page you can jump to <code>Bot</code> and click the button <code>Add Bot</code>. As the
 name suggests this button creates a bot account.</p>
 
-    <img src="/images/img_005.jpg"  alt="img_005.jpg"  class="center"  />
 
 
+
+
+
+
+   
+
+
+
+
+
+<figure class="hf-image center">
+  <img
+    src="/images/img_005.jpg"
+    alt="img_005.jpg"
+    
+    loading="lazy" decoding="async"
+    
+    >
+  
+</figure>
 <p>Never share your bot token with anyone unless you really trust them. If you accidentally leak your token, make sure to generate a new
 one by clicking on <code>Regenerate</code>.</p>
 <p>To invite the bot to your server, simply use this link and replace <code>BOT_ID</code> with the id of your bot:</p>
