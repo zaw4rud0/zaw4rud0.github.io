@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Za&#39;s Site</title>
-        <link>https://zaw4rud0.github.io/posts/</link>
+        <link>https://zawarudo.dev/posts/</link>
         <description>Recent content in Posts on Za&#39;s Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Thu, 28 Apr 2022 18:00:37 +0200</lastBuildDate>
-        <atom:link href="https://zaw4rud0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zawarudo.dev/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Creating Your Own Discord Bot</title>
-            <link>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</link>
+            <link>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</link>
             <pubDate>Mon, 27 Sep 2021 21:07:34 +0200</pubDate>
             
-            <guid>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</guid>
+            <guid>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</guid>
             <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and
 running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using
@@ -253,10 +253,10 @@ a class for the purpose of receiving events.</p>
         
         <item>
             <title>Adding Inline Math to KaTeX</title>
-            <link>https://zaw4rud0.github.io/posts/2021/09/adding-inline-math-to-katex/</link>
+            <link>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</link>
             <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
             
-            <guid>https://zaw4rud0.github.io/posts/2021/09/adding-inline-math-to-katex/</guid>
+            <guid>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</guid>
             <description>&lt;p&gt;In my &lt;a href=&#34;https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/&#34;&gt;last post&lt;/a&gt; we
 saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes
 still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this:
@@ -298,10 +298,10 @@ following script at the end of the file:</p>
         
         <item>
             <title>How to Add TeX Support in Hugo</title>
-            <link>https://zaw4rud0.github.io/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
+            <link>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
             <pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate>
             
-            <guid>https://zaw4rud0.github.io/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
+            <guid>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
             <description>&lt;p&gt;In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&rsquo;t already support TeX, else this tutorial is pretty much useless for you.</p>
 <p>First of all, we create a file called <code>katex.html</code> inside the <code>partials</code> folder which you can find in the <code>layouts</code> folder. Inside it, we paste the following code:</p>
@@ -339,10 +339,10 @@ tags:
         
         <item>
             <title>Hello, World!</title>
-            <link>https://zaw4rud0.github.io/posts/2021/08/hello-world/</link>
+            <link>https://zawarudo.dev/posts/2021/08/hello-world/</link>
             <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
             
-            <guid>https://zaw4rud0.github.io/posts/2021/08/hello-world/</guid>
+            <guid>https://zawarudo.dev/posts/2021/08/hello-world/</guid>
             <description>&lt;p&gt;This is my very first post on this blog. Obligatory code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;);

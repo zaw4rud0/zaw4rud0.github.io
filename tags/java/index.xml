@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Za&#39;s Site</title>
-    <link>https://zaw4rud0.github.io/tags/java/</link>
+    <link>https://zawarudo.dev/tags/java/</link>
     <description>Recent content in Java on Za&#39;s Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Sep 2021 21:07:34 +0200</lastBuildDate>
-    <atom:link href="https://zaw4rud0.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zawarudo.dev/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Your Own Discord Bot</title>
-      <link>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</link>
+      <link>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</link>
       <pubDate>Mon, 27 Sep 2021 21:07:34 +0200</pubDate>
-      <guid>https://zaw4rud0.github.io/posts/2021/09/creating-your-own-discord-bot/</guid>
+      <guid>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and&#xA;running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using&#xA;&lt;a href=&#34;https://www.eclipse.org/downloads/packages/installer&#34;&gt;Eclipse&lt;/a&gt; and &lt;a href=&#34;https://github.com/DV8FromTheWorld/JDA&#34;&gt;JDA&lt;/a&gt; to create&#xA;a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install&#xA;Java and Eclipse, I won&amp;rsquo;t go into depth in that regard.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello, World!</title>
-      <link>https://zaw4rud0.github.io/posts/2021/08/hello-world/</link>
+      <link>https://zawarudo.dev/posts/2021/08/hello-world/</link>
       <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
-      <guid>https://zaw4rud0.github.io/posts/2021/08/hello-world/</guid>
+      <guid>https://zawarudo.dev/posts/2021/08/hello-world/</guid>
       <description>&lt;p&gt;This is my very first post on this blog. Obligatory code:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I hope you enjoy your stay on this blog, and I will see you again very soon.&lt;/p&gt;</description>
     </item>
   </channel>
