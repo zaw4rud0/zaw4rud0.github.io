@@ -257,7 +257,7 @@ a class for the purpose of receiving events.</p>
             <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
             
             <guid>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</guid>
-            <description>&lt;p&gt;In my &lt;a href=&#34;https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/&#34;&gt;last post&lt;/a&gt; we
+            <description>&lt;p&gt;In my &lt;a href=&#34;https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/&#34;&gt;last post&lt;/a&gt; we
 saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes
 still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this:
 $$\int \frac{1}{x-2}$$
@@ -274,7 +274,7 @@ following script at the end of the file:&lt;/p&gt;
     });
 &amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can see that the following markdown line&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<p>In my <a href="https://blog.martinez-ayuso.ch/posts/2021/08/how-to-add-tex-support-in-hugo/">last post</a> we
+            <content type="html"><![CDATA[<p>In my <a href="/posts/2021/08/how-to-add-tex-support-in-hugo/">last post</a> we
 saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes
 still don&rsquo;t allow inline math, i.e. we can only render equations in their own line like this:
 $$\int \frac{1}{x-2}$$
