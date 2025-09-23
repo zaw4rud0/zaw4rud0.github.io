@@ -1,26 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>KaTeX on Za&#39;s Site</title>
-    <link>https://zawarudo.dev/tags/katex/</link>
-    <description>Recent content in KaTeX on Za&#39;s Site</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 26 Sep 2021 20:52:53 +0200</lastBuildDate>
-    <atom:link href="https://zawarudo.dev/tags/katex/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Adding Inline Math to KaTeX</title>
-      <link>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</link>
-      <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
-      <guid>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</guid>
-      <description>&lt;p&gt;In my &lt;a href=&#34;https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/&#34;&gt;last post&lt;/a&gt; we&#xA;saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes&#xA;still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this:&#xA;$$\int \frac{1}{x-2}$$&#xA;To enable inline math, we can simply open our &lt;code&gt;katex.html&lt;/code&gt; partial from the last post and add the&#xA;following script at the end of the file:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;script&amp;gt;&#xA;    document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function () {&#xA;        renderMathInElement(document.body, {&#xA;            delimiters: [&#xA;                { left: &amp;#34;$$&amp;#34;, right: &amp;#34;$$&amp;#34;, display: true },&#xA;                { left: &amp;#34;$&amp;#34;, right: &amp;#34;$&amp;#34;, display: false }&#xA;            ]&#xA;        });&#xA;    });&#xA;&amp;lt;/script&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can see that the following markdown line&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Add TeX Support in Hugo</title>
-      <link>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
-      <pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate>
-      <guid>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
-      <description>&lt;p&gt;In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KaTeX on Za's Site</title><link>https://zawarudo.dev/tags/katex/</link><description>Recent content in KaTeX on Za's Site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 26 Sep 2021 20:52:53 +0200</lastBuildDate><atom:link href="https://zawarudo.dev/tags/katex/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding Inline Math to KaTeX</title><link>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</link><pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate><guid>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</guid><description>&lt;p&gt;In my &lt;a href="https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/"&gt;last post&lt;/a&gt; we
+saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes
+still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this:
+$$\int \frac{1}{x-2}$$
+To enable inline math, we can simply open our &lt;code&gt;katex.html&lt;/code&gt; partial from the last post and add the
+following script at the end of the file:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+ document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function () {
+ renderMathInElement(document.body, {
+ delimiters: [
+ { left: &amp;#34;$$&amp;#34;, right: &amp;#34;$$&amp;#34;, display: true },
+ { left: &amp;#34;$&amp;#34;, right: &amp;#34;$&amp;#34;, display: false }
+ ]
+ });
+ });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can see that the following markdown line&lt;/p&gt;</description></item><item><title>How to Add TeX Support in Hugo</title><link>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</link><pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate><guid>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</guid><description>&lt;p&gt;In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.&lt;/p&gt;</description></item></channel></rss>

@@ -1,61 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Za&#39;s Site</title>
-    <link>https://zawarudo.dev/</link>
-    <description>Recent content on Za&#39;s Site</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 27 Sep 2021 21:07:34 +0200</lastBuildDate>
-    <atom:link href="https://zawarudo.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Creating Your Own Discord Bot</title>
-      <link>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</link>
-      <pubDate>Mon, 27 Sep 2021 21:07:34 +0200</pubDate>
-      <guid>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and&#xA;running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using&#xA;&lt;a href=&#34;https://www.eclipse.org/downloads/packages/installer&#34;&gt;Eclipse&lt;/a&gt; and &lt;a href=&#34;https://github.com/DV8FromTheWorld/JDA&#34;&gt;JDA&lt;/a&gt; to create&#xA;a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install&#xA;Java and Eclipse, I won&amp;rsquo;t go into depth in that regard.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Adding Inline Math to KaTeX</title>
-      <link>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</link>
-      <pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate>
-      <guid>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</guid>
-      <description>&lt;p&gt;In my &lt;a href=&#34;https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/&#34;&gt;last post&lt;/a&gt; we&#xA;saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes&#xA;still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this:&#xA;$$\int \frac{1}{x-2}$$&#xA;To enable inline math, we can simply open our &lt;code&gt;katex.html&lt;/code&gt; partial from the last post and add the&#xA;following script at the end of the file:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;script&amp;gt;&#xA;    document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function () {&#xA;        renderMathInElement(document.body, {&#xA;            delimiters: [&#xA;                { left: &amp;#34;$$&amp;#34;, right: &amp;#34;$$&amp;#34;, display: true },&#xA;                { left: &amp;#34;$&amp;#34;, right: &amp;#34;$&amp;#34;, display: false }&#xA;            ]&#xA;        });&#xA;    });&#xA;&amp;lt;/script&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can see that the following markdown line&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Add TeX Support in Hugo</title>
-      <link>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</link>
-      <pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate>
-      <guid>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</guid>
-      <description>&lt;p&gt;In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://zawarudo.dev/about/</link>
-      <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
-      <guid>https://zawarudo.dev/about/</guid>
-      <description>&lt;p&gt;Hello there, this is the blog of Za Warudo. Here you will find posts about various topics. I hope you enjoy your stay &amp;#x1f604;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>https://zawarudo.dev/projects/</link>
-      <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
-      <guid>https://zawarudo.dev/projects/</guid>
-      <description>&lt;p&gt;Here you can find my projects.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Summaries</title>
-      <link>https://zawarudo.dev/summaries/</link>
-      <pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate>
-      <guid>https://zawarudo.dev/summaries/</guid>
-      <description>&lt;p&gt;Hey there, here you will find my summaries and cheatsheets.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello, World!</title>
-      <link>https://zawarudo.dev/posts/2021/08/hello-world/</link>
-      <pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate>
-      <guid>https://zawarudo.dev/posts/2021/08/hello-world/</guid>
-      <description>&lt;p&gt;This is my very first post on this blog. Obligatory code:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I hope you enjoy your stay on this blog, and I will see you again very soon.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Za's Site</title><link>https://zawarudo.dev/</link><description>Recent content on Za's Site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 02 Oct 2021 13:30:16 +0200</lastBuildDate><atom:link href="https://zawarudo.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started With Hugo in Windows</title><link>https://zawarudo.dev/posts/2021/10/getting-started-with-hugo-in-windows/</link><pubDate>Sat, 02 Oct 2021 13:30:16 +0200</pubDate><guid>https://zawarudo.dev/posts/2021/10/getting-started-with-hugo-in-windows/</guid><description>&lt;figure class="hf-image center"&gt;
+ &lt;img
+ src="https://zawarudo.dev/images/hugo_logo.png"
+ alt="hugo_logo.png"
+ 
+ loading="lazy" decoding="async"
+ 
+ &gt;
+ 
+&lt;/figure&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Hugo is a so-called static site generator written in GoLang, and it&amp;rsquo;s strong suit lies in speed
+and flexibility. Furthermore, Hugo is relatively easy to use and beginner-friendly. Since a blog
+is usually a personal static website, Hugo is very suitable for that. In this post, I want to show
+how you can quickly set up a simple blog using Hugo in Windows. Additionally, I want to explain how
+you can use GitHub Pages to host your blog, so that it&amp;rsquo;s available on the internet 24/7.&lt;/p&gt;</description></item><item><title>Creating Your Own Discord Bot</title><link>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</link><pubDate>Mon, 27 Sep 2021 21:07:34 +0200</pubDate><guid>https://zawarudo.dev/posts/2021/09/creating-your-own-discord-bot/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Have you ever seen a bot in a random Discord server and felt like you wanted to create your own Discord bot? Creating and
+running a Discord bot is actually pretty simple and straightforward. Note that in this post, I will be using
+&lt;a href="https://www.eclipse.org/downloads/packages/installer"&gt;Eclipse&lt;/a&gt; and &lt;a href="https://github.com/DV8FromTheWorld/JDA"&gt;JDA&lt;/a&gt; to create
+a bot in Java. Furthermore, it assumes that you are a Windows 10 user. Since there are many online resources on how to install
+Java and Eclipse, I won&amp;rsquo;t go into depth in that regard.&lt;/p&gt;</description></item><item><title>Adding Inline Math to KaTeX</title><link>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</link><pubDate>Sun, 26 Sep 2021 20:52:53 +0200</pubDate><guid>https://zawarudo.dev/posts/2021/09/adding-inline-math-to-katex/</guid><description>&lt;p&gt;In my &lt;a href="https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/"&gt;last post&lt;/a&gt; we
+saw how we can add KaTeX to a Hugo blog to automatically render TeX code. Unfortunately, our changes
+still don&amp;rsquo;t allow inline math, i.e. we can only render equations in their own line like this:
+$$\int \frac{1}{x-2}$$
+To enable inline math, we can simply open our &lt;code&gt;katex.html&lt;/code&gt; partial from the last post and add the
+following script at the end of the file:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+ document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function () {
+ renderMathInElement(document.body, {
+ delimiters: [
+ { left: &amp;#34;$$&amp;#34;, right: &amp;#34;$$&amp;#34;, display: true },
+ { left: &amp;#34;$&amp;#34;, right: &amp;#34;$&amp;#34;, display: false }
+ ]
+ });
+ });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can see that the following markdown line&lt;/p&gt;</description></item><item><title>How to Add TeX Support in Hugo</title><link>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</link><pubDate>Fri, 27 Aug 2021 16:04:35 +0200</pubDate><guid>https://zawarudo.dev/posts/2021/08/how-to-add-tex-support-in-hugo/</guid><description>&lt;p&gt;In this post I want to show how you can add support for TeX so you can properly render TeX code in your Hugo blog. Chances are that you are already familiar with Hugo and with how everything works. If you are not, that&amp;rsquo;s no problem, you can simply follow this tutorial step by step. Before you start, you should check if your Hugo theme doesn&amp;rsquo;t already support TeX, else this tutorial is pretty much useless for you.&lt;/p&gt;</description></item><item><title>About</title><link>https://zawarudo.dev/about/</link><pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate><guid>https://zawarudo.dev/about/</guid><description>&lt;p&gt;Hello there, this is the blog of Za Warudo. Here you will find posts about various topics. I hope you enjoy your stay &amp;#x1f604;&lt;/p&gt;</description></item><item><title>Projects</title><link>https://zawarudo.dev/projects/</link><pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate><guid>https://zawarudo.dev/projects/</guid><description>&lt;p&gt;Here you can find my projects.&lt;/p&gt;</description></item><item><title>Summaries</title><link>https://zawarudo.dev/summaries/</link><pubDate>Sat, 21 Aug 2021 18:10:45 +0200</pubDate><guid>https://zawarudo.dev/summaries/</guid><description>&lt;p&gt;Hey there, here you will find my summaries and cheatsheets.&lt;/p&gt;</description></item><item><title>Hello, World!</title><link>https://zawarudo.dev/posts/2021/08/hello-world/</link><pubDate>Sat, 21 Aug 2021 17:24:19 +0200</pubDate><guid>https://zawarudo.dev/posts/2021/08/hello-world/</guid><description>&lt;p&gt;This is my very first post on this blog. Obligatory code:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I hope you enjoy your stay on this blog, and I will see you again very soon.&lt;/p&gt;</description></item></channel></rss>
